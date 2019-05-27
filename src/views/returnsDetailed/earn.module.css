@@ -1,0 +1,249 @@
+header {
+  height: 0.44rem;
+  background-color: #4288ff;
+}
+header .head {
+  height: 0.44rem;
+  background-size: 0.14rem;
+  background-color: #4288ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100vw;
+  padding-right: 2vw;
+}
+header .head .gobackImgWrap {
+  font-size: 0;
+  width: 0.44rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .head img {
+  width: 0.1rem;
+  height: auto;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.datePicker {
+  line-height: 1;
+  color: #fff;
+  font-size: 0.14rem;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  margin-left: 4px;
+  border-top: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  transform: translateY(100%);
+}
+
+.returnsDetailed {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  width: 100%;
+  height: 0.55rem;
+}
+
+.earnings {
+  background-color: #356dcc;
+  width: 3.75rem;
+  position: fixed;
+  height: 0.55rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+  font-size: 0.12rem;
+}
+.earnings li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.earningstab {
+  opacity: 0.6;
+}
+.equipImg {
+  height: 0.25rem;
+  background: url(../../assets/img/shebeishouyi.png) no-repeat center;
+  background-size: 0.2rem;
+}
+.quickImg {
+  height: 0.25rem;
+  background: url(../../assets/img/kuaijieshouyi.png) no-repeat center;
+  background-size: 0.15rem;
+}
+.activityImg {
+  height: 0.25rem;
+  background: url(../../assets/img/huodongshouyi.png) no-repeat center;
+  background-size: 0.15rem;
+}
+.earningstab-content {
+  display: none;
+}
+.earningstab-content.result {
+  display: block;
+}
+
+.contentArea {
+  flex: 1;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.contentArea > div {
+  min-height: 100%;
+}
+.scrollWrap {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pickerMonth div {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  height: 25px;
+  line-height: 1;
+  color: rgb(155, 155, 155);
+  font-size: 0.16rem;
+}
+.pickerMonth div span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgb(180, 180, 180);
+  margin-right: 10px;
+}
+
+.pickerMonth div.active {
+  color: #356dcc;
+}
+.active span {
+  background-color: #356dcc !important;
+  background-clip: content-box;
+  border-color: #356dcc !important;
+  padding: 3px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.equipment {
+  height: 100%;
+  background-color: #f1f1f1;
+}
+.equipmentinfo {
+  width: 100%;
+  height: 0.35rem;
+}
+.equipmentTab {
+  width: 3.75rem;
+  position: fixed;
+  height: 0.35rem;
+  display: flex;
+  text-align: center;
+  font-size: 0.14rem;
+  background-color: #fff;
+}
+.equipmenttab {
+  width: 33.3333%;
+  line-height: 0.35rem;
+}
+.result {
+  color: #4288ff;
+  width: 33.3333%;
+  line-height: 0.35rem;
+  border-bottom: 0.01rem solid #4288ff;
+}
+.equipmenttab-content {
+  background-color: #f1f1f1;
+  display: none;
+}
+.equipmenttab-content.result {
+  display: block;
+}
+.tableLeveL3 ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.tableLeveL3 ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.cell {
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.loadMore {
+  margin: 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.14rem;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.cell p {
+  font-size: 0.16rem;
+  color: #333;
+  margin: 0 -10px;
+  padding: 0 10px 10px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+li.info {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li.info div:first-of-type {
+  color: rgb(192, 192, 192);
+}
+
+.equipImg {
+  height: 0.25rem;
+  background: url(../../assets/img/shebeishouyi.png) no-repeat center;
+  background-size: 0.2rem;
+}
+.quickImg {
+  height: 0.25rem;
+  background: url(../../assets/img/kuaijieshouyi.png) no-repeat center;
+  background-size: 0.15rem;
+}
+.activityImg {
+  height: 0.25rem;
+  background: url(../../assets/img/huodongshouyi.png) no-repeat center;
+  background-size: 0.15rem;
+}

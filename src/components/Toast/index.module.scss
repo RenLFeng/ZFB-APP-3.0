@@ -1,0 +1,21 @@
+.Toast {
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 0.16rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.fake {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 0.3rem;
+  color: red;
+  z-index: 999;
+}

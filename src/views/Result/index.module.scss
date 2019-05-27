@@ -1,0 +1,58 @@
+@import '../../public/scss/family.scss';
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feedback {
+  height: 94vh;
+  margin-top: 6vh;
+  .content {
+    height: 50%;
+    @extend %center;
+    flex-direction: column;
+    img {
+      margin-bottom: 3vh;
+      max-width: 20vw;
+    }
+    span {
+      font-size: 0.2rem;
+    }
+    .createPlan {
+      width: 100vw;
+      margin-top: 20px;
+      padding: 0px 10px;
+      font-size: 0.12rem;
+      color: #333333;
+      p {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      i.red {
+        color: #fc4e4e;
+      }
+    }
+  }
+
+  .BtnGroup {
+    @extend %center;
+    p {
+      flex: 1;
+      text-align: center;
+      height: 40px;
+      background-color: #4289ff;
+      @extend %center;
+      font-size: 0.14rem;
+      font-weight: bolder;
+      margin: 0 3vw;
+      border-radius: 4px;
+      border: 1px solid #4289ff;
+      color: #fff;
+      @include first(1) {
+        background-color: #fff;
+        color: #4289ff;
+      }
+    }
+  }
+}

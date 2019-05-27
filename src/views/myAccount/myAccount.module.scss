@@ -1,0 +1,144 @@
+@import '../../public/scss/family.scss';
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ItemWithImg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  img {
+    width: 6vw;
+    margin-right: 1vw;
+  }
+}
+
+.monthBar {
+  background: #ddd;
+  padding: 5px 15px;
+}
+.outItem {
+  margin: 15px 15px;
+  @extend %center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0 10px 10px 10px;
+  border-bottom: 1px solid #ddd;
+  .left {
+    @extend %center;
+    flex-direction: column;
+    align-items: flex-start;
+    p {
+      color: #000;
+      font-size: 0.18rem;
+      font-weight: bold;
+      @include last(1) {
+        color: #838383;
+        font-size: 0.11rem;
+        font-weight: normal;
+      }
+    }
+  }
+  .right {
+    @extend %center;
+    flex-direction: column;
+    align-items: flex-end;
+    p {
+      color: rgb(88, 88, 88);
+      font-size: 0.12rem;
+      @include last(1) {
+        color: #838383;
+        font-size: 0.11rem;
+      }
+    }
+  }
+  @include last(1) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.myAccount {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6vh 18vh 6vh auto;
+  .outline {
+    @extend %center;
+    flex-direction: column;
+    background-color: #4289ff;
+    color: #fff;
+    height: 18vh;
+    .title {
+      font-size: 0.12rem;
+      margin-bottom: 5px;
+    }
+    .money {
+      font-size: 0.27rem;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .profit {
+      border: 1px solid #fff;
+      padding: 2px 4px;
+      border-radius: 50px;
+      font-size: 0.12rem;
+    }
+  }
+  .tabs {
+    @extend %center;
+    background-color: #3978ea;
+    height: 6vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      flex: 1;
+      text-align: center;
+      height: 70%;
+      line-height: 4.2vh;
+      border-right: 1px solid #ddd;
+      @include last(1) {
+        border-right: none;
+      }
+    }
+    p.activedTab {
+      color: rgba(255, 255, 255, 0.384);
+    }
+  }
+  .wrap {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .catalog {
+    height: 10vh;
+    margin: 0 3vw;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    touch-action: manipulation;
+    @include last(1) {
+      border-bottom: none;
+    }
+    @extend %center;
+    .right {
+      @extend %center;
+      justify-content: space-between;
+      i {
+        color: red;
+      }
+      p {
+        text-align: right;
+        font-size: 0.17rem;
+        @include last(1) {
+          font-size: 0.13rem;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}

@@ -26,6 +26,8 @@ navigator.userAgent === 'youxiangju' //判断webview
 
 createplan?type=online&&billDate=25&&repayDate=14&&title=%E5%B9%B3%E5%AE%89%E9%93%B6%E8%A1%8C(4469)&&channelKey=TL-A&&channelName=tonglian&&merchantArea=%E5%B9%BF%E4%B8%9C%E7%9C%81%E5%B9%BF%E5%B7%9E%E5%B8%82%E5%A4%A9%E6%B2%B3%E5%8C%BA&&cardNo=6221550918354469
 
+```javascript
+
 import feedback from './views/Feedback/index'
 import result from './views/Result/index'
 import getItem from './views/createPlan/getItem'
@@ -39,3 +41,5 @@ path: '/deposit',name: '押金详情',
 http://localhost:3100/deposit?id=25794529552
 
 http://localhost:3002/getItem?id=P190423105229974000112
+
+```

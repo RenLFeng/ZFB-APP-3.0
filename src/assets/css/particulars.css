@@ -1,0 +1,18 @@
+.particulars {
+  margin: .15rem .15rem 0;
+  background-color: #fff;
+  padding: 0 .15rem .15rem;
+
+}
+.subTitle {
+  height: .44rem;
+  line-height: .44rem;
+  font-size: .15rem;
+  border-bottom: .01rem solid #E5E5E5
+}
+.particulars .subDetail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .15rem;
+  font-size: .13rem
+}

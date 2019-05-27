@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+select {
+  background: none;
+}
+
+select:checked {
+  background: none;
+}
+
+select:focus {
+  background: none;
+}
+
+select:active {
+  background: none;
+}
+
+option {
+  background: none;
+}
+
+option:checked {
+  background: none;
+}
+
+option:focus {
+  background: none;
+}
+
+option:active {
+  background: none;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}

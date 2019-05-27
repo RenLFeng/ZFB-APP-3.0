@@ -1,0 +1,29 @@
+.toast-it {
+  background-color: #323232;
+  color: #F4F4F4;
+  padding: 3px 20px;
+  border-radius: 20px;
+  text-align: center;
+  position: fixed;
+  line-height: 30px;
+  /* center horizontally */
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  font-size: 14px;
+  animation-name: TOAST-APPEAR;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+}
+
+@keyframes TOAST-APPEAR {
+  15% {
+      opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}

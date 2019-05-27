@@ -1,0 +1,32 @@
+@import '../../../public/scss/family.scss';
+
+section {
+  background-color: #fff;
+  border-radius: 6px;
+  margin: 10px 0;
+  .upArea {
+    border-bottom: 1px solid #e5e5e5;
+    color: #000;
+    font-size: 0.16rem;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+  .downArea {
+    padding: 10px;
+    font-size: 0.14rem;
+
+    & > div {
+      padding: 4px 0;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      & > p:first-child {
+        color: rgb(149, 149, 149);
+      }
+    }
+  }
+}

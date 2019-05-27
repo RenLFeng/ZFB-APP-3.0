@@ -1,0 +1,114 @@
+.referrer {
+  height: 0.35rem;
+  background-color: #4288ff;
+  font-size: 0.15rem;
+  text-align: center;
+  color: #ffffff;
+  line-height: 0.35rem;
+  font-size: 0.14rem;
+}
+.label {
+  font-size: 0.14rem;
+  width: 0.75rem;
+  display: inline-block;
+}
+.row {
+  outline: none;
+  border: none;
+  font-size: 0.14rem;
+  height: 0.32rem;
+  width: 3.25rem;
+  border-bottom: solid 0.01rem #e5e5e5;
+  margin-bottom: .12rem;
+}
+input {
+  outline: none;
+  border: none;
+  font-size: 0.14rem;
+  height: 0.3rem;
+  width: 2.1rem;
+}
+input::-webkit-input-placeholder {
+  color: #cccccc;
+  font-size: 0.13rem;
+}
+button {
+  outline: none;
+  border: none;
+}
+.form {
+  padding: 0.1rem 0.25rem;
+}
+.getyzm {
+  font-size: 0.14rem;
+  float: right;
+  line-height: 0.3rem;
+  background-color: #fff;
+  color: #4288ff;
+}
+.registerBtn {
+  font-size: 0.16rem;
+  width: 3.15rem;
+  height: 0.49rem;
+  background-color: #007aff;
+  border-radius: 0.04rem;
+  margin: 0 auto;
+  color: #fff;
+  margin-top: .3rem; 
+}
+#agreement {
+  margin: 0;
+  display: none;
+}
+#agreement + label::before {
+  content: "";
+  display: inline-block;
+  width: 0.12rem;
+  height: 0.12rem;
+  color: #3d98e0;
+  border: 1px solid #3d98e0;
+  border-radius: 0.03rem;
+  vertical-align: text-top;
+  margin-right: 0.05rem;
+}
+#agreement:checked + label::before {
+  background: url(../img/choose.png) no-repeat center;
+  background-size: 0.1rem 0.06rem;
+}
+.xieyi {
+  font-size: 0rem;
+  margin-left: 0.3rem;
+}
+.downl {
+  margin-top: 40%;
+  text-align: center;
+}
+.downl span {
+  display: inline-block;
+  width: .9rem;
+  height: .3rem;
+  line-height: .3rem;
+  color: #008FFF;
+  border: .01rem solid #008FFF;
+  border-radius: .1rem;
+}
+.deal {
+  display: inline-block;
+  font-size: .14rem;
+}
+.dealName {
+  font-size: .12rem;
+   width: .22rem
+}
+.userdeal {
+  color: #008FFF;
+}
+.error {
+  position: absolute;
+  left: 1rem;
+  font-size: .12rem;
+  color: red;
+}
+.username {
+  color: #fff;
+}

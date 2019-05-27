@@ -1,0 +1,124 @@
+.myAccount .accountBalance{
+  height: 1.14rem;
+  background-color: #4288FF;
+  padding-top: .1rem;
+}
+.accountfix {
+  width: 100%;
+  height: 1.65rem;
+}
+.myAccount .accountBalance p{
+  color: #fff;
+  text-align: center
+}
+.myAccount .accountSelect {
+  width: 100%;
+  height: .5rem;
+  background-color: #3878e8;
+}
+.myAccount .accountHead {
+  display: flex;
+  padding: 0.08rem 0;
+  text-align: center;
+  font-size: .14rem;
+  justify-content: space-around;
+}
+.myAccount .accountTab {
+  width: 50%;
+  color: #a1bff1;
+  line-height: .34rem;
+}
+.myAccount .accountTab.hit{
+  color: #fff;
+}
+.myAccount .accountTab-content{
+  display: none;
+}
+.myAccount .accountTab-content.hit{
+  display: block;
+}
+.borderBottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+.process-situation{
+  background-color: #fff;
+  margin: .32rem 0 .15rem;
+  padding-bottom: .18rem;
+}
+.process-situation>ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 .1rem;
+}
+.process-situation li{
+  text-align: center;
+}
+.apply,.arrival{
+  display: flex
+}
+.process {
+  width: 34%;
+}
+.apply .step,.process .step,.arrival .step{
+  padding: .16rem 0 .04rem;
+  font-size: .14rem;
+  color: #b0b0b0
+}
+.apply dt{
+  height: .22rem;
+  background: url(../img/apply.png) no-repeat center;
+  background-size: .2rem .2rem;
+}
+.process-bar1{
+  width: .24rem;
+  height: 2px;
+  background: url(../img/blue_bar.png) no-repeat center;
+  background-size: .24rem 2px;
+  margin-top: .08rem;
+}
+.process dt{
+  height: .22rem;
+  background: url(../img/processing.png) no-repeat center;
+  background-size: .19rem .21rem;
+}
+.processErr dt{
+  height: .22rem;
+  background: url(../img/withdraw_failed.png) no-repeat center;
+  background-size: .19rem .21rem;
+}
+.processSuc dt{
+  height: .22rem;
+  background: url(../img/successful_processing.png) no-repeat center;
+  background-size: .19rem .21rem;
+}
+.process-bar2{
+  width: .24rem;
+  height: 2px;
+  background: url(../img/gray_bar.png) no-repeat center;
+  background-size: .24rem 2px;
+  margin-top: .08rem;
+}
+.arrival dt{
+  height: .2rem;
+  background: url(../img/notArrival.png) no-repeat center;
+  background-size: .2rem .2rem;
+}
+.arrivalSuc dt{
+  height: .2rem;
+  background: url(../img/successful_arrival.png) no-repeat center;
+  background-size: .2rem .2rem;
+}
+.withdrawal-msg {
+  background-color: #f0f0f0;
+}
+.withdrawal-msg div{
+  width: 100%;
+  height: .44rem;
+  line-height: .44rem;
+  background-color: #fff;
+  border-bottom: .005rem solid #F6F6F6;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .15rem;
+  box-sizing: border-box;
+}

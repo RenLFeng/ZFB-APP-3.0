@@ -1,0 +1,533 @@
+/* 合伙人业绩 */
+.performanceList > li {
+  width: 94vw;
+  height: 1.7rem;
+  border-radius: 0.04rem;
+  color: #fff;
+  margin: 2vh 3vw;
+  height: 20vh;
+  box-shadow: 0px 2px 30px 0px rgba(34, 34, 34, 0.08);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.performanceList > a {
+  display: block;
+  width: 94vw;
+  border-radius: 0.04rem;
+  color: #fff;
+  margin: 2vh 3vw;
+  height: 20vh;
+  box-shadow: 0px 2px 30px 0px rgba(34, 34, 34, 0.08);
+}
+
+li.repayPerformance {
+  background: url(../img/partner/repay.png) no-repeat 100%;
+  background-size: 100%;
+}
+li.receiptPerformance {
+  background: url(../img/partner/receive.png) no-repeat 100%;
+  background-size: 100%;
+}
+li.activeReward {
+  background: url(../img/partner/spread.png) no-repeat 100%;
+  background-size: 100%;
+}
+.monlyTransactionAmount {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 0.4rem;
+  font-size: 0.14rem;
+}
+.monlyTransactionAmount > dd {
+  font-size: 0.26rem;
+}
+.reachAchievement {
+  display: flex;
+  font-size: 0.12rem;
+  justify-content: space-between;
+  padding: 0 30px 0;
+  text-align: center;
+}
+.columnLine {
+  width: 1px;
+  height: 0.3rem;
+  background-color: #e5e5e5;
+}
+/* 设备还款 */
+.achievementHead {
+  height: 1.1rem;
+  width: 100%;
+  padding: 0.1rem 0 0 0;
+  background-color: #4288ff;
+}
+.types-title {
+  width: 3.45rem;
+  height: 0.34rem;
+  line-height: 0.34rem;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 0.04rem;
+  display: flex;
+  overflow: hidden;
+}
+.types-tab {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #4288ff;
+}
+.types-tab.active {
+  background-color: #fff;
+  color: #4288ff;
+  border: none;
+}
+.typesCon.active {
+  display: block;
+}
+.typesCon {
+  display: none;
+}
+.totalTransaction {
+  height: 1.8rem;
+  width: 100%;
+  background: #ffffff;
+}
+.tradingVolume {
+  width: 3.45rem;
+  height: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0rem 1px 0.12rem 0rem rgba(66, 136, 255, 0.58);
+  border-radius: 0.04rem;
+  color: #4288ff;
+  margin: -0.5rem auto 0;
+  text-align: center;
+}
+.tradingVolume > p {
+  font-size: 0.14rem;
+  padding-top: 0.3rem;
+}
+.tradingVolume > strong {
+  display: block;
+  font-size: 0.3rem;
+  margin: 0.08rem 0 0.2rem 0;
+}
+.excellentPerson {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0.36rem;
+}
+.achievementReward {
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #f1f1f1;
+  padding-top: 0.3rem;
+}
+.rewards {
+  width: 100%;
+  padding: 0 4vw;
+  box-sizing: border-box;
+  height: 2.75rem;
+  border-radius: 0.04rem;
+}
+.historyAchievement {
+  width: 100%;
+  box-sizing: border-box;
+  height: 0.45rem;
+  background: url('../img/lishiyeji_bg.png') no-repeat center;
+  background-size: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.15rem 0 0.25rem;
+  line-height: 0.45rem;
+}
+.historyAchievement > p:first-child {
+  background: url('../img/yjjl.png') no-repeat 0 center;
+  background-size: 0.13rem 0.15rem;
+  font-size: 0.17rem;
+  padding-left: 0.205rem;
+}
+.historyAchievement > p:last-child {
+  padding-right: 20px;
+  background: url('../img/sanjiaoxing.png') no-repeat 0.68rem center;
+  background-size: 0.04rem 0.06rem;
+}
+.fourReward {
+  height: 2.3rem;
+  /* padding: 0.25rem 0.15rem; */
+  background-color: #fff;
+  border-bottom-right-radius: 0.04rem;
+  border-bottom-left-radius: 0.04rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.fourReward > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourReward > li dd {
+  font-size: 0.16rem;
+  text-align: center;
+}
+.fourReward > li dt {
+  color: #666;
+  font-size: 0.12rem;
+  padding-left: 0.22rem;
+  height: 0.2rem;
+  line-height: 0.2rem;
+}
+.dividedReward {
+  background: url('../img/fenrunjiangli.png') no-repeat 0 center;
+  background-size: 0.2rem 0.2rem;
+}
+.manageReward {
+  background: url('../img/guanlijiangli.png') no-repeat 0 center;
+  background-size: 0.2rem 0.2rem;
+}
+.excellentReward {
+  background: url('../img/zhuoyuejiangli.png') no-repeat 0 center;
+  background-size: 0.2rem 0.2rem;
+}
+.gloryReward {
+  background: url('../img/rongyaojiangli.png') no-repeat 0 center;
+  background-size: 0.2rem 0.2rem;
+}
+.settlementRules {
+  font-size: 0.12rem;
+  color: #4288ff;
+  text-align: center;
+  margin-top: 0.14rem;
+}
+.settlementRules > span {
+  background: url('../img/jiesuanguize.png') no-repeat 0 center;
+  background-size: 0.14rem 0.14rem;
+  display: inline-block;
+  padding-left: 0.18rem;
+}
+.settlementCover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.settlementHide {
+  display: none;
+}
+.settlementBox {
+  position: absolute;
+  top: 1.02rem;
+  left: 0;
+  right: 0;
+  width: 3.15rem;
+  margin: 0 auto;
+  height: 4.6rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.12rem;
+  border-radius: 0.04rem;
+}
+.settlementBox > h2 {
+  height: 1rem;
+  line-height: 1rem;
+  width: 100%;
+  color: #fff;
+  font-size: 0.24rem;
+  text-align: center;
+  background: url('../img/rules-bg.png') no-repeat center;
+  background-size: 100%;
+}
+.ruleSubTit {
+  font-size: 0.14rem;
+  color: #4288ff;
+}
+.rulesContent {
+  padding: 0 0.15rem;
+}
+.rulesContent > div {
+  padding-top: 0.12rem;
+}
+.rulesContent > div > p {
+  line-height: 0.16rem;
+  color: #333;
+}
+.historyAchievementWrap {
+  width: 100%;
+  flex: 1;
+  background-color: rgb(241, 241, 241);
+}
+.historyContent {
+  margin: -0.5rem auto 0;
+  width: 3.45rem;
+  height: 4.15rem;
+  border-radius: 0.04rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+.achievementPreview {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0.69rem;
+  padding: 0 0.3rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.achievementPreview > dl {
+  text-align: center;
+  flex: 1;
+}
+.achievementPreview > dl > dt {
+  color: #666;
+  font-size: 0.13rem;
+  margin-bottom: 0.02rem;
+}
+.achievementPreview > dl > dd {
+  color: #000;
+}
+.achievementList {
+  display: flex;
+}
+.lines {
+  width: 0.35rem;
+  height: 3rem;
+  display: flex;
+  padding: 0.27rem 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.lines > div {
+  width: 1px;
+  height: 20%;
+  margin: 0 auto;
+}
+.lines > div > div {
+  width: 100%;
+  height: 0.35rem;
+  margin: 0.07rem auto 0;
+  background-color: #e5e5e5;
+}
+.perMonthAchievement {
+  height: 0.5rem;
+  line-height: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 2.95rem;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+.perMonthAchievement::before {
+  display: inline-block;
+  content: '';
+  width: 0.05rem;
+  height: 0.05rem;
+  background-color: #4288ff;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 0.16rem 0 -0.2rem;
+}
+.newTime {
+  padding-right: 0.28rem;
+  background: url('../img/new.png') no-repeat 100% center;
+  background-size: 0.24rem 0.12rem;
+}
+.montlyAmount {
+  position: absolute;
+  right: 0;
+}
+.historyNote {
+  text-align: center;
+  font-size: 0.12rem;
+  color: #999;
+  line-height: 0.45rem;
+}
+.settleMonth {
+  width: 100%;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  background-color: #dddddd;
+  color: #000;
+  font-size: 0.12rem;
+  padding: 0 0 0 0.14rem;
+  font-weight: 550;
+}
+.currentMonthReward {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0.5rem;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  padding: 0 0.13rem;
+}
+.userInfo {
+  position: absolute;
+  top: -0.96rem;
+  left: 0.195rem;
+  height: 0.63rem;
+}
+.userInfo > img {
+  width: 0.48rem;
+  height: 0.48rem;
+  margin-right: 0.12rem;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.userAchievementDetailWrap {
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  position: absolute;
+  top: 1.4rem;
+  bottom: 0;
+}
+.userAchievementDetailContent {
+  margin-top: -0.32rem;
+}
+.userAchievementDetailContent > div {
+  width: 3.45rem;
+  height: 1.2rem;
+  border-radius: 0.04rem;
+  margin: 0 auto 0.1rem;
+  background-color: #fff;
+  text-align: center;
+}
+.userAchievementDetailContent > div dt {
+  font-size: 0.18rem;
+  color: #333;
+  padding: 0 0 0.08rem;
+}
+.userAchievementDetailContent > div dd {
+  font-size: 0.12rem;
+  color: #999;
+}
+.allusers {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.achieveBillon {
+  background: url('../img/billion.png') no-repeat 0 0.1rem;
+  background-size: 0.7rem 0.18rem;
+}
+.achievetwentyMillon {
+  background: url('../img/twentyMillion.png') no-repeat 0 0.1rem;
+  background-size: 0.7rem 0.18rem;
+}
+.headWrap {
+  height: 0.98rem;
+  width: 100%;
+  background-color: #4288ff;
+}
+.searchBox {
+  width: 3.45rem;
+  height: 0.34rem;
+  margin: 0 auto;
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  top: 0.09rem;
+  left: 0.15rem;
+  width: 0.17rem;
+  height: 0.17rem;
+}
+.searchInput {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.04rem;
+  padding: 0 0.5rem 0 0.44rem;
+  box-sizing: border-box;
+}
+.searchInput::-webkit-search-cancel-button {
+  display: none;
+}
+.searchBtn {
+  position: absolute;
+  top: 0.05rem;
+  right: 0;
+  width: 0.5rem;
+  line-height: 0.24rem;
+  text-align: center;
+  border-left: 1px solid #e5e5e5;
+  color: #4288ff;
+  font-size: 0.12rem;
+}
+.merchantSubtitle {
+  width: 100%;
+  height: 0.34rem;
+  background-color: #f1f1f1;
+  line-height: 0.34rem;
+  text-align: center;
+  color: #666666;
+  font-size: 0.12rem;
+}
+.repaymentlist,
+.receiptlist {
+  padding: 0 0.15rem;
+  width: 100%;
+  height: 5.15rem;
+  overflow-y: scroll;
+  position: fixed;
+}
+.repaymentlist li,
+.receiptlist li {
+  width: 100%;
+  height: 0.59rem;
+  line-height: 0.59rem;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.14rem;
+}
+.topThree {
+  width: 0.2rem;
+  height: 0.295rem;
+  vertical-align: middle;
+  margin-right: 0.19rem;
+}
+.afterThree {
+  display: inline-block;
+  width: 0.2rem;
+  text-align: center;
+  margin-right: 0.19rem;
+}
+.merchantUser {
+  color: #000;
+}
+.merchantUser.active {
+  color: #4288ff;
+}
+.rankHide {
+  display: none;
+}
+.userMsg {
+  color: #fff;
+}
+.userAddress {
+  font-size: 0.12rem;
+  padding: 0 0 0 0.15rem;
+}
+.userId {
+  font-size: 0.13rem;
+}
+/* vip业绩 */
+.vipRepay {
+  background: url('../img/vipRepay.png') no-repeat center;
+  background-size: 100%;
+}
+.vipReceipt {
+  background: url('../img/vipReceipt.png') no-repeat center;
+  background-size: 100%;
+}
+.vipReward {
+  background: url('../img/vipReward.png') no-repeat center;
+  background-size: 100%;
+}

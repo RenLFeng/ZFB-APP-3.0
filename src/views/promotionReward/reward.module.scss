@@ -1,0 +1,109 @@
+.layout {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-auto-columns: 100%;
+  grid-template-rows: 6vh auto 80px;
+  section {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    background: #4288ff;
+    border-radius: 0;
+  }
+  section:nth-of-type(2) {
+    background: #3554e2 url(../../assets/img/inviteReward_bg.png) no-repeat center;
+    background-size: 100% auto;
+    background-position: 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  section:nth-of-type(3) {
+    background: #3554e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.rewardCon {
+  width: 3.45rem;
+  height: 3.55rem;
+  margin: 0.19rem auto;
+  background-color: #fff;
+  border-radius: 0.08rem;
+  padding: 0.28rem 0.14rem 0.18rem 0.16rem;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  p {
+    font-size: 0.13rem;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  h2 {
+    color: #333;
+    font-weight: bold;
+    height: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .smallBar {
+      display: inline-block;
+      width: 4px;
+      height: 100%;
+      background-color: #4288ff;
+      border-radius: 0.015rem;
+      margin-right: 0.09rem;
+    }
+  }
+  .left {
+    width: 65%;
+  }
+  .right {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 90%;
+    }
+  }
+}
+
+.VIP {
+  text-align: center;
+  font-size: 0.13rem;
+  color: #d91414;
+  margin-top: 0.12rem;
+}
+.btns {
+  width: 3.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.myreward {
+  width: 1.48rem;
+  height: 0.39rem;
+  background-color: #fff;
+  border-radius: 0.04rem;
+  color: #ff7f01;
+  text-align: center;
+  line-height: 0.39rem;
+}
+.remmond {
+  width: 1.48rem;
+  height: 0.39rem;
+  background-color: #fda100;
+  border-radius: 0.04rem;
+  color: #fff;
+  line-height: 0.39rem;
+  text-align: center;
+}

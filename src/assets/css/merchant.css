@@ -1,0 +1,81 @@
+.headWrap {
+  height: .98rem;
+  width: 100%;
+  background-color: #4288ff;
+}
+.searchBox {
+  width: 3.45rem;
+  height: .34rem;
+  margin:0 auto;
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  top:.09rem;
+  left: .15rem;
+  width: .17rem;
+  height: .17rem;
+}
+.searchInput {
+  width: 100%;
+  height: 100%;
+  border-radius:.04rem;
+  padding: 0 .5rem 0 .44rem;
+  box-sizing: border-box;
+}
+.searchInput::-webkit-search-cancel-button{
+  display: none;
+}
+.searchBtn {
+  position: absolute;
+  top:.05rem;
+  right: 0;
+  width: .5rem;
+  line-height: .24rem;
+  text-align: center;
+  border-left: 1px solid #e5e5e5;
+  color: #4288ff;
+  font-size: .12rem;
+}
+.merchantSubtitle {
+  width: 100%;
+  height: .34rem;
+  background-color: #f1f1f1;
+  line-height: .34rem;
+  text-align: center;
+  color: #666666;
+  font-size: .12rem;
+}
+.repaymentlist,.receiptlist {
+  padding: 0 .15rem;
+  width: 100%;
+  height: 5.15rem;
+  overflow-y: scroll;
+  position: fixed;
+}
+.repaymentlist>li,.receiptlist>li{
+  width: 100%;
+  height: .59rem;
+  line-height: .59rem;
+  border-bottom: 1px solid  #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+}
+.topThree {
+  width:.2rem;
+  height:.295rem;
+  vertical-align:middle;
+  margin-right:.19rem;
+}
+.afterThree {
+  display: inline-block;
+  width: .2rem;
+  text-align: center;
+  margin-right:.19rem;
+}
+.merchantUser {
+  color:#000;
+}
+.rankHide {
+  display:none;
+}

@@ -1,0 +1,118 @@
+@import '../../../public/scss/family.scss';
+
+.deviceID {
+  font-size: 0.12rem;
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px dotted #ddd;
+    margin-bottom: 10px;
+    @include last-child() {
+      margin-bottom: 0;
+    }
+    p {
+      min-width: 50%;
+      max-width: 100%;
+      text-align: left;
+      @include last-child() {
+        text-align: right;
+      }
+    }
+  }
+}
+
+.layout {
+  background-color: pink;
+  margin: 10px;
+  margin-bottom: 20px;
+  // padding: 0 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  @include first-child() {
+    margin-top: 0;
+  }
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 40px 1fr;
+  .title {
+    border-bottom: 1px solid #e5e5e5;
+    color: #000;
+    font-size: 0.16rem;
+    padding: 0 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    align-content: center;
+    align-items: center;
+    .txt {
+      i {
+        font-size: 0.12rem;
+        color: #ffb44c;
+        margin-left: 1em;
+        // opacity: 0;
+      }
+    }
+    .Cancellation {
+      font-size: 0.12rem;
+      color: #4288ff;
+      text-align: right;
+      i {
+        padding: 1px 2px;
+        border-radius: 3px;
+        border: 1px solid #4288ff;
+      }
+    }
+    .more {
+      font-size: 0.12rem;
+      color: #4288ff;
+    }
+    .Badge {
+      opacity: 0;
+      position: absolute;
+      top: 7px;
+      right: -40px;
+      width: 100px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      text-align: center;
+      color: #fff;
+      background-color: #4288ff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      transform: rotate(45deg) scale(0.8);
+    }
+    .BadgeGray {
+      background-color: #ccc;
+    }
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    li {
+      height: 30px;
+      width: 100%;
+      font-size: 0.14rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        @include first-child() {
+          color: #999999;
+        }
+        @include last-child() {
+          color: #333333;
+        }
+      }
+    }
+  }
+}

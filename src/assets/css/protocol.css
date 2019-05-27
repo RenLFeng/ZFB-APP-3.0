@@ -1,0 +1,17 @@
+ .font {
+  text-indent: 2em;
+  color: #1a1a1a;
+  font-size: 15px;
+  margin-top: 5px;
+} 
+.headline {
+  text-align: center;
+  font-size: 18px;
+  text-indent: 0em;
+}
+.line {
+  text-indent: 0em
+}
+.lineinfo {
+  margin: 10px;
+}

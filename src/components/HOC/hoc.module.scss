@@ -1,0 +1,21 @@
+.empty {
+  background: #fff;
+  position: fixed;
+  top: 6vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  .emptyContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: 60vw;
+    }
+    p {
+      text-align: center;
+      color: #999;
+    }
+  }
+}

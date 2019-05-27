@@ -1,0 +1,144 @@
+.share {
+  background-color: #4288ff;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: #fff;
+  height: 100vh;
+  background-image: url('../../assets/img/share/share_bg.png');
+  background-size: cover;
+  .logo {
+    height: 15vh;
+    text-align: center;
+    @extend %center;
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+  h3 {
+    margin-top: 4px;
+    text-align: center;
+  }
+  .card {
+    margin: 0 10vw;
+    min-height: 100px;
+    background: #fff;
+    border-radius: 6px;
+    margin-top: 15px;
+    overflow: hidden;
+    h4 {
+      color: #000;
+      text-align: center;
+      padding: 12px 0;
+    }
+    .number {
+      color: #000;
+      margin: 0 16px;
+      @extend %center;
+      justify-content: space-between;
+      span {
+        color: #fc4e4e;
+        display: inline-block;
+        padding: 3px 5px;
+        border-radius: 2px;
+        font-weight: bold;
+        background-color: #efefef;
+      }
+    }
+    h5 {
+      font-size: 0.12rem;
+      color: #999999;
+      text-align: center;
+      padding: 16px 0;
+    }
+    .qrcode {
+      @extend %center;
+      height: auto;
+      img {
+        width: 40vw;
+      }
+    }
+    .kit {
+      @extend %center;
+      justify-content: space-between;
+      margin: 15px -10px 0;
+      background-image: url('../../assets/img/share/line.png');
+      background-position: center center;
+      i {
+        width: 20px;
+        height: 20px;
+        background-color: #4288ff;
+        border-radius: 50%;
+      }
+      span {
+        flex: 1;
+        overflow: hidden;
+        b {
+          @extend %center;
+          display: block;
+          width: 100%;
+          height: 1px;
+          border-top: 1px dashed rgb(253, 217, 11);
+          transform: scaleX(4);
+        }
+      }
+    }
+    .tips {
+      margin: 14px;
+      box-sizing: border-box;
+      position: relative;
+      .text {
+        width: 100%;
+        @extend %center;
+        flex-direction: column;
+        p {
+          font-size: 0.14rem;
+          color: #7c838d;
+          margin: 3px 0;
+        }
+      }
+      .saveBtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 40%;
+          padding: 4px 20px;
+          background: rgb(240, 196, 0);
+          border-radius: 3px;
+          text-align: center;
+          touch-action: manipulation;
+        }
+      }
+    }
+  }
+  .info {
+    margin: 0 16vw;
+    text-align: center;
+    padding-top: 15px;
+  }
+}
+
+.logoMask {
+  background: #4288ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+}

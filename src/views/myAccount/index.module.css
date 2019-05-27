@@ -1,0 +1,20 @@
+.currentMonth {
+  margin: "0.05rem auto";
+  font-size: 0.1rem;
+  /* height: 0.21rem; */
+  line-height: 0.21rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.currentMonth > div {
+  height: 100%;
+  border-radius: 0.11rem;
+  border: 1px solid #f1f1f1;
+  padding: 0 0.2rem;
+}
+.Empty {
+  margin-top: 33%;
+}
