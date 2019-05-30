@@ -1,8 +1,8 @@
 import img1 from '../assets/img/profitList/offline_1.png'
 import img2 from '../assets/img/profitList/offline_2.png'
 import img3 from '../assets/img/profitList/online_1.png'
-import img4 from '../assets/img/profitList/online_2.png'
-import img5 from '../assets/img/profitList/pos_1.png'
+// import img4 from '../assets/img/profitList/online_2.png'
+// import img5 from '../assets/img/profitList/pos_1.png'
 import img6 from '../assets/img/profitList/actived.png'
 import img7 from '../assets/img/profitList/Recommend.png'
 
@@ -31,37 +31,37 @@ export const accessList = obj => {
       api: '/profit/deviceEarnings',
       img: img2
     },
-    {
-      item: '快捷还款分润',
-      type: 'QuickRepayment',
-      totalEarnings: obj['online_repay'] ? obj['online_repay'].totalEarnings : '0.00',
-      thisMonth: obj['online_repay'] ? obj['online_repay'].monthEarnings : '0.00',
-      statisticsType: 1,
-      api: '/profit/onlineDeviceEarnings',
-      img: img3,
-      kinds: 'VIP',
-      VIPpageTitle: '本月还款总交易额(元)'
-    },
-    {
-      item: '快捷收款分润',
-      type: 'QuickCollection',
-      totalEarnings: obj['online_receipt'] ? obj['online_receipt'].totalEarnings : '0.00',
-      thisMonth: obj['online_receipt'] ? obj['online_receipt'].monthEarnings : '0.00',
-      statisticsType: 2,
-      api: '/profit/onlineDeviceEarnings',
-      img: img4,
-      kinds: 'VIP',
-      VIPpageTitle: '本月收款总交易额(元)'
-    },
-    {
-      item: '平台购机',
-      type: 'PlatformPurchase',
-      totalEarnings: obj['buy_pos'] ? obj['buy_pos'].totalEarnings : '0.00',
-      thisMonth: obj['buy_pos'] ? obj['buy_pos'].monthEarnings : '0.00',
-      statisticsType: 3,
-      api: '/profit/reward',
-      img: img5
-    },
+    // {
+    //   item: '快捷还款分润',
+    //   type: 'QuickRepayment',
+    //   totalEarnings: obj['online_repay'] ? obj['online_repay'].totalEarnings : '0.00',
+    //   thisMonth: obj['online_repay'] ? obj['online_repay'].monthEarnings : '0.00',
+    //   statisticsType: 1,
+    //   api: '/profit/onlineDeviceEarnings',
+    //   img: img3,
+    //   kinds: 'VIP',
+    //   VIPpageTitle: '本月还款总交易额(元)'
+    // },
+    // {
+    //   item: '快捷收款分润',
+    //   type: 'QuickCollection',
+    //   totalEarnings: obj['online_receipt'] ? obj['online_receipt'].totalEarnings : '0.00',
+    //   thisMonth: obj['online_receipt'] ? obj['online_receipt'].monthEarnings : '0.00',
+    //   statisticsType: 2,
+    //   api: '/profit/onlineDeviceEarnings',
+    //   img: img4,
+    //   kinds: 'VIP',
+    //   VIPpageTitle: '本月收款总交易额(元)'
+    // },
+    // {
+    //   item: '平台购机',
+    //   type: 'PlatformPurchase',
+    //   totalEarnings: obj['buy_pos'] ? obj['buy_pos'].totalEarnings : '0.00',
+    //   thisMonth: obj['buy_pos'] ? obj['buy_pos'].monthEarnings : '0.00',
+    //   statisticsType: 3,
+    //   api: '/profit/reward',
+    //   img: img5
+    // },
     {
       item: '激活奖励',
       type: 'ActivationBonus',
@@ -80,17 +80,17 @@ export const accessList = obj => {
       statisticsType: 4,
       img: img7
     },
-    {
-      item: '推荐奖励',
-      type: 'PromotionAward',
-      totalEarnings: obj['generalize'] ? obj['generalize'].totalEarnings : '0.00',
-      thisMonth: obj['generalize'] ? obj['generalize'].monthEarnings : '0.00',
-      statisticsType: 3,
-      api: '/profit/onlineDeviceEarnings',
-      img: img1,
-      kinds: 'VIP',
-      VIPpageTitle: '本月推广奖励收益(元)'
-    },
+    // {
+    //   item: '推荐奖励',
+    //   type: 'PromotionAward',
+    //   totalEarnings: obj['generalize'] ? obj['generalize'].totalEarnings : '0.00',
+    //   thisMonth: obj['generalize'] ? obj['generalize'].monthEarnings : '0.00',
+    //   statisticsType: 3,
+    //   api: '/profit/onlineDeviceEarnings',
+    //   img: img1,
+    //   kinds: 'VIP',
+    //   VIPpageTitle: '本月推广奖励收益(元)'
+    // },
     {
       item: '押金设备',
       type: 'PromotionAward',

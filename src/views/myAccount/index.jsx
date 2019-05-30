@@ -230,7 +230,6 @@ export default class myAccount extends Component {
                             <p>{a.bankCard}</p>
                           </div>
                           <div className={css.right}>
-                            {/* <p>{a.withdrawMsg}</p> */}
                             <p>{CashWithdrawalMAP.get(Number(a.status))}</p>
                             <p>{a.withdrawDate}</p>
                           </div>

@@ -24,12 +24,12 @@ import vipPersonalAchievementList from './views/vipAchievement/vipPersonalAchiev
 import vipTeamAchievementList from './views/vipAchievement/vipTeamAchievementList'
 import vipDetail from './views/vipAchievement/vipDetail'
 import userDetail from './views/vipAchievement/userDetail'
-// import { CreatePlan } from './views/plan/create'
-// import { PlanDetail } from './views/plan/detail'
 import PartnerPerformance from './views/partnerAchievement/partnerPerformance'
+import VConsole from 'vconsole'
+new VConsole()
 
-// import VConsole from 'vconsole'
-// new VConsole()
+// import { PlanDetail } from './views/plan/detail'
+// import { CreatePlan } from './views/plan/create'
 
 // const Async = asyncComponent(() => import('./views/deposit'))
 // const asyncComponent2 = path => asyncComponent(() => import(path))
