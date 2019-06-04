@@ -3,10 +3,7 @@ import './index.module.scss'
 import { post } from '../../store/requestFacade'
 
 export default function Login(props) {
-  // const [id, setId] = useState('15770584383') // 汉寿
-  // const [id, setId] = useState('13318787997') // lxq
-  const [id, setId] = useState('13142095143')
-  // const [psd, setpsd] = useState('qqq222')
+  const [id, setId] = useState('15770584383') // 汉寿
   const [psd, setpsd] = useState('qqq111')
   const handleInputId = event => {
     setId(event.target.value)

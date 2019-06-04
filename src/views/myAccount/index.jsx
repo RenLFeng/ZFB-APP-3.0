@@ -171,7 +171,7 @@ export default class myAccount extends Component {
             handleGoBack={this.handleGoBack}
             whiteArrow
             color="#fff"
-            backgroundColor="#4289FF"
+            backgroundColor="#0075c1"
           />
         </div>
         <div className={css.outline}>

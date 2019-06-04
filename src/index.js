@@ -4,6 +4,7 @@ import App from './App'
 import { Provider } from 'react-redux'
 import store from './redux/index'
 import Modal from 'react-modal'
+import './public/project.css'
 
 const Root = document.getElementById('root')
 Modal.setAppElement(Root)

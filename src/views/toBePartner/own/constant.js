@@ -1,39 +1,33 @@
 export const Franchise = [
   {
     id: 1,
-    info: '合伙人招商经营权',
-    src: 'img1'
+    info: '合伙人招商经营权'
   },
   {
     id: 2,
-    info: 'AI智能设备销售权',
-    src: 'img4'
+    info: '智付宝全国销售经营权'
   },
   {
     id: 3,
-    info: '增值服务推广权',
-    src: 'img3'
+    info: '增值服务推广权'
   },
   {
     id: 4,
-    info: '智付宝新项目优先特许经营权',
-    src: 'img2'
+    info: '三众智享特许经营权'
   }
 ]
 
 export const Gifts = [
   {
     id: 1,
-    title: '赠品1',
-    p1: '赠送AI智能设备5台',
-    p2: '  ',
-    src: 'img6'
+    title: '权益一',
+    p1: '配套智付宝两台',
+    src: '_5'
   },
   {
     id: 2,
-    title: '赠品2',
-    p1: '享有交易流水分润',
-    p2: '0.12% - 0.18%',
-    src: 'img5'
+    title: '权益二',
+    p1: '享有交易分润',
+    src: '_6'
   }
 ]

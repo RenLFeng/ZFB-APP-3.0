@@ -56,7 +56,7 @@ class PartnerPerformance extends Component {
                 <dt>本月还款总交易量(元)</dt>
                 <dd>{this.state.repayTotalTransaction.sumTradeAmt}</dd>
               </dl>
-              <div className="reachAchievement">
+              {/* <div className="reachAchievement">
                 <dl>
                   <dt>达成亿元(人)</dt>
                   <dd>{this.state.repayTotalTransaction.hundredOfMillionPeoples}</dd>
@@ -66,7 +66,7 @@ class PartnerPerformance extends Component {
                   <dt>达成两千万(人)</dt>
                   <dd>{this.state.repayTotalTransaction.twentyMillionPeoples}</dd>
                 </dl>
-              </div>
+              </div> */}
             </Link>
           </li>
           <li className="receiptPerformance">
@@ -81,7 +81,7 @@ class PartnerPerformance extends Component {
                 <dt>本月收款总交易量(元)</dt>
                 <dd>{this.state.receiptTotalTransaction.sumTradeAmt}</dd>
               </dl>
-              <div className="reachAchievement">
+              {/* <div className="reachAchievement">
                 <dl>
                   <dt>达成亿元(人)</dt>
                   <dd>{this.state.receiptTotalTransaction.hundredOfMillionPeoples}</dd>
@@ -91,7 +91,7 @@ class PartnerPerformance extends Component {
                   <dt>达成两千万(人)</dt>
                   <dd>{this.state.receiptTotalTransaction.twentyMillionPeoples}</dd>
                 </dl>
-              </div>
+              </div> */}
             </Link>
           </li>
           <li className="activeReward" onClick={this.LinkTo}>

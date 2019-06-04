@@ -8,7 +8,6 @@ import { accessHalfYearMonthList } from '../../public/utils'
 import { post } from '../../store/requestFacade'
 import Loader from '../../components/Loader/index'
 import Empty from '../../components/Empty/index'
-// import { WithEmpty } from '../../components/HOC/withempty'
 
 export default function AccountDetails(props) {
   const [monthValue, setMonthValue] = useState(dayjs().format('YYYY-MM'))
@@ -32,9 +31,6 @@ export default function AccountDetails(props) {
   const Card = Cards[type]
   const canShowMonthReward = ['EquipmentRepayment', 'EquipmentCollection'].includes(type)
   const handlePickMonth = v => {
-    // console.log('pickedMonthID: ', pickedMonthID)
-    // console.log('v.month: ', v.month)
-    // console.log('v.key: ', v.key)
     setMonthChangeStatus(pickedMonthID === v.key)
     setPickedMonthID(v.key)
     setMonthValue(v.month)
@@ -78,7 +74,6 @@ export default function AccountDetails(props) {
         setIsEmpty(!EmptyStatus)
         setLoaderStatus(false)
         setcanFetchMore(!(res.data.total === data.length))
-        // console.log('!(res.data.total === data.length): ', !(res.data.total === data.length))
       }
     } catch (error) {
       console.log(error)

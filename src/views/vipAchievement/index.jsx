@@ -55,15 +55,18 @@ class vipAchievement extends Component {
         </header>
         <ul className="performanceList">
           <li className="vipRepay">
-            <Link to={{
-              pathname:'/quickRepay',
-              state:{tradeType:4}
-            }}  style={{color:'#ffc778'}}>
+            <Link
+              to={{
+                pathname: '/quickRepay',
+                state: { tradeType: 4 }
+              }}
+              style={{ color: '#ffc778' }}
+            >
               <dl className="monlyTransactionAmount">
                 <dt>本月还款总交易量(元)</dt>
                 <dd>{this.state.repayTotalTransaction.sumTradeAmt}</dd>
               </dl>
-              <div className="reachAchievement">
+              {/* <div className="reachAchievement">
                 <dl>
                   <dt>达成亿元(人)</dt>
                   <dd>
@@ -75,34 +78,32 @@ class vipAchievement extends Component {
                   <dt>达成两千万(人)</dt>
                   <dd>{this.state.repayTotalTransaction.twentyMillionPeoples}</dd>
                 </dl>
-              </div>
+              </div> */}
             </Link>
           </li>
           <li className="vipReceipt">
-            <Link to={{
-              pathname:'/quickReceipt',
-              state:{tradeType:3}
-            }} 
-            style={{color:'#fff'}}>
+            <Link
+              to={{
+                pathname: '/quickReceipt',
+                state: { tradeType: 3 }
+              }}
+              style={{ color: '#fff' }}
+            >
               <dl className="monlyTransactionAmount">
                 <dt>本月收款总交易量(元)</dt>
                 <dd>{this.state.receiptTotalTransaction.sumTradeAmt}</dd>
               </dl>
-              <div className="reachAchievement">
+              {/* <div className="reachAchievement">
                 <dl>
                   <dt>达成亿元(人)</dt>
-                  <dd>
-                    {this.state.receiptTotalTransaction.hundredOfMillionPeoples}
-                  </dd>
+                  <dd>{this.state.receiptTotalTransaction.hundredOfMillionPeoples}</dd>
                 </dl>
                 <div className="columnLine" />
                 <dl>
                   <dt>达成两千万(人)</dt>
-                  <dd>
-                    {this.state.receiptTotalTransaction.twentyMillionPeoples}
-                  </dd>
+                  <dd>{this.state.receiptTotalTransaction.twentyMillionPeoples}</dd>
                 </dl>
-              </div>
+              </div> */}
             </Link>
           </li>
           <li className="vipReward" onClick={this.LinkTo}>

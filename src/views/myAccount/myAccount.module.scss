@@ -70,7 +70,7 @@
   .outline {
     @extend %center;
     flex-direction: column;
-    background-color: #4289ff;
+    background-color: var(--standardColor);
     color: #fff;
     height: 18vh;
     .title {
@@ -91,7 +91,7 @@
   }
   .tabs {
     @extend %center;
-    background-color: #3978ea;
+    background-color: var(--standardColor);
     height: 6vh;
     color: #fff;
     display: flex;

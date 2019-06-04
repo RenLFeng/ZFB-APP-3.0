@@ -5,7 +5,6 @@ const CardOne = props => {
   const { data } = props
   return (
     <section>
-      {/* <div className={style.upArea}>还款日结</div> */}
       <div className={style.downArea}>
         <div>
           <p>收益金额</p>
@@ -13,7 +12,6 @@ const CardOne = props => {
         </div>
         <div>
           <p>收益时间</p>
-          {/* <p>{formatDate(data.profitTime)}</p> */}
           <p>
             {getType(data.profitTime) === 'number' ? formatDate(data.profitTime) : data.profitTime}
           </p>
@@ -30,34 +28,6 @@ const CardOne = props => {
     </section>
   )
 }
-
-// const CardTwo = props => {
-//   // const { data, showMore, text } = props
-//   const { data } = props
-//   return (
-//     <section>
-//       {/* <div className={style.upArea}>还款日结</div> */}
-//       <div className={style.downArea}>
-//         <div>
-//           <p>设备收款分润</p>
-//           <p>{data.profitAmt}</p>
-//         </div>
-//         <div>
-//           <p>收益时间</p>
-//           <p>{formatDate(data.profitTime)}</p>
-//         </div>
-//         <div>
-//           <p>收益来源</p>
-//           <p>{data.profitSource}</p>
-//         </div>
-//         <div>
-//           <p>订单号</p>
-//           <p>{data.tradeNo}</p>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
 
 export default {
   EquipmentRepayment: CardOne, // 设备还款分润
