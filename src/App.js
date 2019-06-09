@@ -2,11 +2,8 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import '@babel/polyfill'
 import asyncComponent from './components/AsyncComponent'
-import userAgreement from './views/userAgreement'
 import MeasurementCard from './views/MeasurementCard'
-import Partnership from './views/Partnership'
 import ShareRegister from './views/shareRegister'
-import Authorization from './views/authorization'
 import ReturnsDetailed from './views/returnsDetailed/index'
 import deviceRepay from './views/partnerAchievement/deviceRepay'
 import deviceReceipt from './views/partnerAchievement/deviceReceipt'
@@ -34,6 +31,7 @@ new VConsole()
 // const Async = asyncComponent(() => import('./views/deposit'))
 // const asyncComponent2 = path => asyncComponent(() => import(path))
 // const asyncComponent2 = realtivePath => asyncComponent(() => import(realtivePath))
+// import Authorization from './views/authorization'
 
 const RouterMap = [
   {
@@ -70,14 +68,14 @@ const RouterMap = [
   },
   {
     path: '/share',
-    name: 'share',
+    name: '推荐分享页面-2',
     component: asyncComponent(() => import('./views/QRcode/index'))
   },
-
   {
     path: '/RewardDescription',
-    name: '推荐分享页面',
-    component: asyncComponent(() => import('./views/promotionReward/rewardDescription'))
+    name: '推荐分享页面-1',
+    // component: asyncComponent(() => import('./views/promotionReward/rewardDescription')),
+    component: asyncComponent(() => import('./views/QRcode/index'))
   },
   {
     path: '/promotion',
@@ -133,6 +131,21 @@ const RouterMap = [
     path: '/deposit',
     name: '押金详情',
     component: asyncComponent(() => import('./views/deposit/index'))
+  },
+  {
+    path: '/authorization',
+    name: '合作协议',
+    component: asyncComponent(() => import('./views/authorization'))
+  },
+  {
+    path: '/partnership',
+    name: '合伙人合作协议',
+    component: asyncComponent(() => import('./views/Partnership'))
+  },
+  {
+    path: '/userAgreement',
+    name: '用户注册协议',
+    component: asyncComponent(() => import('./views/userAgreement'))
   }
 ]
 
@@ -155,15 +168,10 @@ class App extends Component {
           {RouterList.map(({ path, name, component }) => (
             <Route path={path} key={name} component={component} />
           ))}
-          <Route path="/userAgreement" component={userAgreement} />
           <Route path="/MeasurementCard" component={MeasurementCard} />
-          <Route path="/partnership" component={Partnership} />
           <Route path="/shareRegister" component={ShareRegister} />
-          <Route path="/authorization" component={Authorization} />
           <Route path="/returnsDetailed" component={ReturnsDetailed} />
           <Route path="/partnerPerformance" component={PartnerPerformance} />
-          {/* <Route path="/plan/create" component={CreatePlan} /> */}
-          {/* <Route path="/plan/detail" component={PlanDetail} /> */}
           <Route path="/deviceRepay" component={deviceRepay} />
           <Route path="/historyAchievement" component={historyAchievement} />
           <Route path="/historyAchievementDetail" component={historyAchievementDetail} />

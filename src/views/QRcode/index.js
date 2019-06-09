@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from '../../components/Header/index'
 import css from './css.module.scss'
 import html2canvas from 'html2canvas'
-import logoPng from '../../assets/img/logo-w.png'
+import logoPng from '../../assets/img/logo.png'
 import { post } from '../../store/requestFacade'
 import { build } from '../../store/qrCode'
 
@@ -60,10 +60,9 @@ export default class index extends Component {
           handleGoBack={this.handleGoBack}
           whiteArrow
           color="#fff"
-          backgroundColor="#4288FF"
+          backgroundColor="#0075c1"
         />
         <div className={css.content} id="canvas">
-          <div className={css.logoMask} data-html2canvas-ignore />
           <div className={css.logo}>
             <img src={logoPng} alt="" />
           </div>
@@ -78,10 +77,8 @@ export default class index extends Component {
             </div>
             <h5>邀请的好友可在注册时直接填写邀请码</h5>
             <div className={css.qrcode}>
-              <img src={qrcode} alt="" />
-            </div>
-            <div className={css.kit}>
               <i />
+              <img src={qrcode} alt="" />
               <i />
             </div>
             <div className={css.tips}>
@@ -89,12 +86,11 @@ export default class index extends Component {
                 <p>1.扫描二维码可注册</p>
                 <p>2.输入推荐码也可注册</p>
               </div>
-              <div data-html2canvas-ignore className={css.saveBtn} onClick={this.downloadImage}>
-                <span>保存图片</span>
-              </div>
             </div>
           </div>
-          <p className={css.info}>AI智能系统升级，线上线下一体化 为您带来超前的用户体验</p>
+          <button data-html2canvas-ignore onClick={this.downloadImage}>
+            保存图片分享
+          </button>
         </div>
       </div>
     )

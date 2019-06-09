@@ -73,7 +73,7 @@ export default class index extends Component {
       .catch(res => console.log(res))
   }
   accessData = time => {
-    const { storagePage, giveoutPage, activatedPage } = this.state
+    const { storagePage, activatedPage } = this.state
     getStorageList(storagePage, time)
       .then(res => {
         this.setState({

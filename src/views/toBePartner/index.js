@@ -81,7 +81,16 @@ export default function Cunter() {
             <div key={v.id}>
               <div className={style.giftImg}>
                 <img src={v.src === '_5' ? _5 : _6} alt="" />
-                <p>{v.p1}</p>
+                {v.src === '_5' ? (
+                  <p>{v.p1}</p>
+                ) : (
+                  <>
+                    <div>
+                      <p>{v.p1}</p>
+                      <p style={{ color: '#949494', fontSize: '12px' }}>{v.p2}</p>
+                    </div>
+                  </>
+                )}
               </div>
               <div className={style.giftName}>{v.title}</div>
             </div>

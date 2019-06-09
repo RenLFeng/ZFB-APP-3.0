@@ -28,6 +28,7 @@ export const Gifts = [
     id: 2,
     title: '权益二',
     p1: '享有交易分润',
+    p2: '0.13%-0.18%',
     src: '_6'
   }
 ]
