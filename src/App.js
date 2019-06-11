@@ -146,6 +146,11 @@ const RouterMap = [
     path: '/userAgreement',
     name: '用户注册协议',
     component: asyncComponent(() => import('./views/userAgreement'))
+  },
+  {
+    path: '/shareRegister',
+    name: '新用户扫码注册',
+    component: asyncComponent(() => import('./views/shareRegister'))
   }
 ]
 
@@ -169,7 +174,6 @@ class App extends Component {
             <Route path={path} key={name} component={component} />
           ))}
           <Route path="/MeasurementCard" component={MeasurementCard} />
-          <Route path="/shareRegister" component={ShareRegister} />
           <Route path="/returnsDetailed" component={ReturnsDetailed} />
           <Route path="/partnerPerformance" component={PartnerPerformance} />
           <Route path="/deviceRepay" component={deviceRepay} />

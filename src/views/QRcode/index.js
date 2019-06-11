@@ -15,14 +15,16 @@ export default class index extends Component {
   }
 
   getUserinfo = async () => {
-    const prefix = window.location.href.split('share')[0]
-    const userphone = 'shareRegister?userPhone='
+    // const prefix = window.location.href.split('share')[0]
+    const prefix = window.location.hostname
+    const userphone = '/shareRegister?userPhone='
     const username = '&&username='
     try {
       const res = await post({
         url: '/user/invitation'
       })
       const txt = prefix + userphone + res.data.inviteOrganAccount + username + res.data.username
+      console.log('txt: ', txt)
       this.setState({
         username: res.data.username,
         phone: res.data.inviteOrganAccount,
