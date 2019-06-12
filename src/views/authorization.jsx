@@ -25,7 +25,6 @@ class Authorization extends Component {
     return (
       <>
         <div className={css.authorization}>
-          <img src={require('../assets/img/logo.png')} className={css.logo} alt="" />
           <div className={css.textInfo}>
             <p align="center" className={css.biaoti}>
               授权书

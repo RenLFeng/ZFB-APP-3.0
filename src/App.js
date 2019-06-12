@@ -134,7 +134,7 @@ const RouterMap = [
   },
   {
     path: '/authorization',
-    name: '合作协议',
+    name: '授权书',
     component: asyncComponent(() => import('./views/authorization'))
   },
   {
