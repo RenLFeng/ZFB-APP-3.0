@@ -68,7 +68,7 @@ export default class index extends Component {
           <div className={css.logo}>
             <img src={logoPng} alt="" />
           </div>
-          <h3>好友{username}邀请您加入智付宝</h3>
+          <h3>好友{username}邀请您开启智付宝</h3>
 
           <div className={css.card}>
             <h4>推荐码</h4>
@@ -77,7 +77,7 @@ export default class index extends Component {
                 <span key={i}>{v}</span>
               ))}
             </div>
-            <h5>邀请的好友可在注册时直接填写邀请码</h5>
+            <h5>您的好友在注册时也可填写邀请码</h5>
             <div className={css.qrcode}>
               <i />
               <img src={qrcode} alt="" />
