@@ -23,7 +23,7 @@ import vipDetail from './views/vipAchievement/vipDetail'
 import userDetail from './views/vipAchievement/userDetail'
 import PartnerPerformance from './views/partnerAchievement/partnerPerformance'
 import VConsole from 'vconsole'
-new VConsole()
+// new VConsole()
 
 // import { PlanDetail } from './views/plan/detail'
 // import { CreatePlan } from './views/plan/create'
