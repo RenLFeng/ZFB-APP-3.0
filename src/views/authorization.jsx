@@ -12,6 +12,7 @@ class Authorization extends Component {
   componentDidMount() {
     const data = this.props.location.search
     const date = parseURL(decodeURI(data)).date
+  
     let year = date.substr(0, 4)
     this.setState({
       userPhone: parseURL(data).inviteCode,
@@ -25,7 +26,7 @@ class Authorization extends Component {
     return (
       <>
         <div className={css.authorization}>
-          <div className={css.textInfo}>
+          <div className={css.textInfo} style={{top:'20vh'}}>
             <p align="center" className={css.biaoti}>
               授权书
             </p>
