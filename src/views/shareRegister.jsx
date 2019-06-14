@@ -155,7 +155,7 @@ class ShareRegister extends Component {
     })
   }
   goLink() {
-    window.location.href = 'https://dibaqu.com/ZZVZ'
+    window.location.href = 'https://dibaqu.com/SZZX'
   }
   render() {
     return (
