@@ -160,7 +160,7 @@ class App extends Component {
   getToken() {
     if (navigator.userAgent === 'youxiangju') {
       const token = window.getLoadData.getToken()
-      localStorage.setItem('token', token)
+      localStorage.setItem('token',token)
     }
   }
   componentWillMount() {

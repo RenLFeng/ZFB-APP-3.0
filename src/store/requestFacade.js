@@ -48,6 +48,7 @@ export const get = ({ url, data }) =>
 export const post = ({ url, data }) =>
   new Promise((resolve, reject) => {
     data = data || {}
+    // let prefix = 'http://test-app.sanzhongzhixiang.com'
     let prefix = process.env.REACT_APP_HOST
     url = [prefix, url].join('/')
     let client = new XMLHttpRequest()
@@ -80,7 +81,7 @@ export const post = ({ url, data }) =>
         }
         if (retCode === '0002') {
           console.log('retCode is', retCode)
-          return window.getLoadData.outLogin()
+          // return window.getLoadData.outLogin()
         }
         resolve({
           retMsg,

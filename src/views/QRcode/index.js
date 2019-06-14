@@ -13,17 +13,19 @@ export default class index extends Component {
     qrcode: '',
     imgBase64: ''
   }
-
   getUserinfo = async () => {
     // const prefix = window.location.href.split('share')[0]
-    const prefix = window.location.hostname
+    let prefix = window.location.hostname;
+      prefix=prefix.indexOf('http')!=-1?prefix:'http://'+prefix;
     const userphone = '/shareRegister?userPhone='
     const username = '&&username='
     try {
       const res = await post({
-        url: '/user/invitation'
+        url: 'user/invitation'
       })
-      const txt = prefix + userphone + res.data.inviteOrganAccount + username + res.data.username
+      let txt = prefix + userphone + res.data.inviteOrganAccount + username + res.data.username
+          txt=encodeURI(txt);
+      console.log('encodeURI',txt);
       console.log('txt: ', txt)
       this.setState({
         username: res.data.username,

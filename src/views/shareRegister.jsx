@@ -5,7 +5,7 @@ import { parseURL } from '../store/URL'
 import { Link } from 'react-router-dom'
 import { post } from '../store/requestFacade'
 import { toastIt } from '../components/popup'
-
+console.log(window.location.hostname);
 class ShareRegister extends Component {
   constructor(props) {
     super(props)
