@@ -16,7 +16,12 @@ export default class index extends Component {
   getUserinfo = async () => {
     // const prefix = window.location.href.split('share')[0]
     let prefix = window.location.hostname;
-      prefix=prefix.indexOf('http')!=-1?prefix:'http://'+prefix;
+      if(prefix.indexOf("test")!=-1){
+        prefix=prefix.indexOf('http')!=-1?prefix:'http://'+prefix;
+      }else {
+        prefix=prefix.indexOf('https')!=-1?prefix:'https://'+prefix;
+      }
+     
     const userphone = '/shareRegister?userPhone='
     const username = '&&username='
     try {
