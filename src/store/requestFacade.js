@@ -1,11 +1,11 @@
 import querystring from 'querystring'
 
 const APP_USER_AGENT = 'youxiangju'
-// const baseURL='http://test-app.sanzhongzhixiang.com';
+const baseURL='http://test-app.sanzhongzhixiang.com';
 // const  baseURL='http://192.168.0.24:80';
 export const get = ({ url, data }) =>
   new Promise((resolve, reject) => {
-    const prefix = process.env.REACT_APP_HOST
+    const prefix = process.env.REACT_APP_HOST || baseURL
     const finalURL = [[prefix, url].join('/'), querystring.stringify(data)].join('?')
     console.log(finalURL)
     let client = new XMLHttpRequest()
@@ -49,7 +49,7 @@ export const get = ({ url, data }) =>
 export const post = ({ url, data }) =>
   new Promise((resolve, reject) => {
     data = data || {}
-    let prefix = process.env.REACT_APP_HOST
+    let prefix = process.env.REACT_APP_HOST || baseURL
     url = [prefix, url].join('/')
     let client = new XMLHttpRequest()
     client.open('POST', url, true)
@@ -81,7 +81,7 @@ export const post = ({ url, data }) =>
         }
         if (retCode === '0002') {
           console.log('retCode is', retCode)
-          return window.getLoadData.outLogin()
+          // return window.getLoadData.outLogin()
         }
         resolve({
           retMsg,
@@ -95,7 +95,7 @@ export const post = ({ url, data }) =>
 export const postWithJson = ({ url, data }) =>
   new Promise((resolve, reject) => {
     data = data || {}
-    let prefix = process.env.REACT_APP_HOST
+    let prefix = process.env.REACT_APP_HOST || baseURL
     url = [prefix, url].join('')
     let client = new XMLHttpRequest()
     client.open('POST', url, true)

@@ -34,6 +34,11 @@ class PartnerPerformance extends Component {
   componentDidMount() {
     this.getPartnerAchievement()
   }
+    handleItemsGoBack = () => {
+    this.props.history.push({
+      pathname: 'myAccount'
+    })
+  }
   render() {
     return (
       <div>
@@ -94,11 +99,31 @@ class PartnerPerformance extends Component {
               </div> */}
             </Link>
           </li>
-          <li className="activeReward" onClick={this.LinkTo}>
+          {/* <li className="activeReward" onClick={this.LinkTo}>
             <Link
               to={{
                 pathname: '/returnsDetailed',
                 search: '?type=3'
+              }}
+            >
+              <dl className="monlyTransactionAmount" style={{ color: ' #458cff' }}>
+                <dt>本月激活奖励收益(元)</dt>
+                <dd>{this.state.monthActivateRewards}</dd>
+              </dl>
+            </Link>
+          </li> */}
+
+          <li className="activeReward" onClick={this.LinkTo}>
+            <Link
+              to={{
+                pathname: '/AccountDetails',
+                query: {
+                  type: "ActivationBonus",
+                  title: "激活奖励",
+                  goback: this.handleItemsGoBack,
+                  api: "/profit/reward",
+                  statisticsType: 1
+                }
               }}
             >
               <dl className="monlyTransactionAmount" style={{ color: ' #458cff' }}>

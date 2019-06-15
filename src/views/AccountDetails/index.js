@@ -22,6 +22,9 @@ export default function AccountDetails(props) {
   const [canFetchMore, setcanFetchMore] = useState(true)
   const [MonthChangeStatus, setMonthChangeStatus] = useState(false)
 
+
+console.log(props.location.query);
+
   const availdDateList = accessHalfYearMonthList()
   const type = props.location.query.type
   const pageTitle = props.location.query.title

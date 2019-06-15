@@ -50,7 +50,7 @@ class teamAchievement extends Component {
           </Link>
         </div>
         <div className="achievementReward">
-          <div className="rewards">
+          {/* <div className="rewards">
             <Link to={{
               pathname:'/historyAchievement',
               state:{tradeType:this.props.teamTrade.tradeType}
@@ -87,7 +87,7 @@ class teamAchievement extends Component {
               </li>
             </ul>
             <p className='settlementRules' ><span onClick={ () => this.popRules()}>结算规则</span></p>   
-          </div>
+          </div> */}
         </div>
         <SettlementRules show={this.state.sendShow} getHide={() => {this.getHide()}}/>
       </div> 

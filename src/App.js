@@ -21,6 +21,7 @@ import vipPersonalAchievementList from './views/vipAchievement/vipPersonalAchiev
 import vipTeamAchievementList from './views/vipAchievement/vipTeamAchievementList'
 import vipDetail from './views/vipAchievement/vipDetail'
 import userDetail from './views/vipAchievement/userDetail'
+//合伙人业绩
 import PartnerPerformance from './views/partnerAchievement/partnerPerformance'
 import VConsole from 'vconsole'
 // new VConsole()
@@ -51,11 +52,13 @@ const RouterMap = [
     component: asyncComponent(() => import('./views/abc/index')),
     hidden: true
   },
+  //我的账户
   {
     path: '/myAccount',
     name: 'myAccount',
     component: asyncComponent(() => import('./views/myAccount/index.jsx'))
   },
+  //激活奖励
   {
     path: '/AccountDetails',
     name: 'AccountDetails',
@@ -159,7 +162,8 @@ class App extends Component {
   // 获取token
   getToken() {
     if (navigator.userAgent === 'youxiangju') {
-      const token = window.getLoadData.getToken()
+      // const token = window.getLoadData.getToken()
+      const token = '79420412122ef246ef7646fd146fe0c4'
       localStorage.setItem('token',token)
     }
   }
