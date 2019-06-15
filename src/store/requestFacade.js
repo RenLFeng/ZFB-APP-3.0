@@ -84,6 +84,7 @@ export const post = ({ url, data }) =>
           console.log('retCode is', retCode)
           return window.getLoadData.outLogin()
         }
+        
         resolve({
           retMsg,
           data,
