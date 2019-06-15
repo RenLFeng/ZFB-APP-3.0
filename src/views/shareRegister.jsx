@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { post } from '../store/requestFacade'
 import { toastIt } from '../components/popup'
 let title=document.querySelector('title');
-title.innerHTML='邀请你开启智付宝'
+title.innerHTML='智付宝'
 class ShareRegister extends Component {
   constructor(props) {
     super(props)
