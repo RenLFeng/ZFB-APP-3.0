@@ -58,6 +58,7 @@ export const post = ({ url, data }) =>
     const token = localStorage.getItem('token');
     alert('token==='+token)
     alert('navigator.userAgent==='+navigator.userAgent)
+    alert(process.env.NODE_ENV)
     if (token && navigator.userAgent === APP_USER_AGENT) {
          alert('token && navigator.userAgent'+'token'+token+'===='+navigator.userAgent);
       client.setRequestHeader('token', token)
@@ -66,6 +67,7 @@ export const post = ({ url, data }) =>
         alert(process.env.NODE_ENV+'====='+token)
       client.setRequestHeader('token', token)
     }
+    client.setRequestHeader('token', token)
 
     client.send(
       Object.keys(data)
