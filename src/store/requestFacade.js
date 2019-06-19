@@ -57,6 +57,7 @@ export const post = ({ url, data }) =>
     client.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
     const token = localStorage.getItem('token');
     alert('token==='+token)
+    alert('navigator.userAgent==='+navigator.userAgent)
     if (token && navigator.userAgent === APP_USER_AGENT) {
          alert('token && navigator.userAgent'+'token'+token+'===='+navigator.userAgent);
       client.setRequestHeader('token', token)
