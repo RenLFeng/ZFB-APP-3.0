@@ -16,14 +16,17 @@ export default class index extends Component {
   getUserinfo = async () => {
     // const prefix = window.location.href.split('share')[0]
     let prefix = window.location.hostname;
+    console.log('vconsole',prefix);
+    // let prefix = 'http://test-h5.sanzhongzhixiang.com';
       if(prefix.indexOf("test")!=-1){
         prefix=prefix.indexOf('http')!=-1?prefix:'http://'+prefix;
+        console.log('test',prefix);
       }else {
         prefix=prefix.indexOf('https')!=-1?prefix:'https://'+prefix;
+        console.log('no _test',prefix);
       }
-     
     const userphone = '/shareRegister?userPhone='
-    const username = '&&username='
+    const username = '&&username='     
     try {
       const res = await post({
         url: 'user/invitation'

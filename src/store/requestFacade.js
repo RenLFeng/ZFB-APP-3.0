@@ -57,9 +57,11 @@ export const post = ({ url, data }) =>
     client.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
     const token = localStorage.getItem('token')
     if (token && navigator.userAgent === APP_USER_AGENT) {
+         alert('token'+token+'===='+navigator.userAgent);
       client.setRequestHeader('token', token)
     }
     if (process.env.NODE_ENV !== 'production') {
+        alert(process.env.NODE_ENV+'====='+token)
       client.setRequestHeader('token', token)
     }
 
@@ -84,7 +86,7 @@ export const post = ({ url, data }) =>
           console.log('retCode is', retCode)
           return window.getLoadData.outLogin()
         }
-        
+
         resolve({
           retMsg,
           data,

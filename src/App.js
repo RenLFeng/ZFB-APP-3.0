@@ -24,7 +24,7 @@ import userDetail from './views/vipAchievement/userDetail'
 //合伙人业绩
 import PartnerPerformance from './views/partnerAchievement/partnerPerformance'
 import VConsole from 'vconsole'
-// new VConsole()
+new VConsole()
 
 // import { PlanDetail } from './views/plan/detail'
 // import { CreatePlan } from './views/plan/create'
