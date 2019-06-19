@@ -155,6 +155,7 @@ class ShareRegister extends Component {
       confirmPassword: e.target.value
     })
   }
+  
   goLink() {
     window.location.href = 'https://dibaqu.com/SZZX'
   }

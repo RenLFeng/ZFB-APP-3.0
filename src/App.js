@@ -24,7 +24,7 @@ import userDetail from './views/vipAchievement/userDetail'
 //合伙人业绩
 import PartnerPerformance from './views/partnerAchievement/partnerPerformance'
 import VConsole from 'vconsole'
-// new VConsole()
+new VConsole()
 
 // import { PlanDetail } from './views/plan/detail'
 // import { CreatePlan } from './views/plan/create'
@@ -162,8 +162,7 @@ class App extends Component {
   // 获取token
   getToken() {
     if (navigator.userAgent === 'youxiangju') {
-      // const token = window.getLoadData.getToken()
-      const token = '79420412122ef246ef7646fd146fe0c4'
+      const token = window.getLoadData.getToken()
       localStorage.setItem('token',token)
     }
   }

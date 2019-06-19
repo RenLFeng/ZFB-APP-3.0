@@ -5,6 +5,7 @@ import '../../assets/css/common.css'
 import '../../assets/css/partnerPerformance.css'
 import { Link } from 'react-router-dom'
 
+
 class PartnerPerformance extends Component {
   constructor() {
     super()
