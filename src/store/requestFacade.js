@@ -85,7 +85,7 @@ export const post = ({ url, data }) =>
         }
         if (retCode === '0002') {
           console.log('retCode is', retCode)
-          return window.getLoadData.outLogin()
+          // return window.getLoadData.outLogin()
         }
 
         resolve({
