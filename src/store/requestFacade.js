@@ -55,11 +55,15 @@ export const post = ({ url, data }) =>
     let client = new XMLHttpRequest()
     client.open('POST', url, true)
     client.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+
     const token = localStorage.getItem('token');
+    
     console.log('token==='+token)
-    console.log('navigator==='+navigator)
+    console.log('navigator==='+JSON.stringify(navigator))
     console.log('navigator.userAgent===='+navigator.userAgent);
     console.log(process.env.NODE_ENV)
+
+
 
     if (token && navigator.userAgent === APP_USER_AGENT) {
       client.setRequestHeader('token', token)
@@ -87,7 +91,7 @@ export const post = ({ url, data }) =>
         }
         if (retCode === '0002') {
           console.log('retCode is', retCode)
-          // return window.getLoadData.outLogin()
+          return window.getLoadData.outLogin()
         }
 
         resolve({
