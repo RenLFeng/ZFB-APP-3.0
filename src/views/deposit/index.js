@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import css from './css.module.scss'
 import Header from '../../components/Header/index'
-import src from '../../assets/img/100000.jpg'
+import src from '../../assets/img/100000.png'
 import { moneyRate, StatusMap } from './map'
 import { getDepositInfo } from '../../public/api'
 import { post } from '../../public/call'

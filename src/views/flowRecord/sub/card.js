@@ -9,7 +9,7 @@ const StorageCard = props => {
       <div className={style.title}>
         <span className={style.txt}>
           {data.name}
-          {Number(data.isDeposit) === 1 && <i>押金</i>}
+          {/* {Number(data.isDeposit) === 1 && <i>押金</i>} */}
         </span>
         <span className={style.Cancellation}>
           {Number(data.isDeposit) === 1 &&

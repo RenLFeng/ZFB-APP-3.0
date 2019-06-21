@@ -1,6 +1,7 @@
 import img1 from '../assets/img/profitList/offline_1.png'
 import img2 from '../assets/img/profitList/offline_2.png'
 import img3 from '../assets/img/profitList/online_1.png'
+import img4 from '../assets/img/profitList/serve.png'
 import img6 from '../assets/img/profitList/actived.png'
 import img7 from '../assets/img/profitList/Recommend.png'
 
@@ -54,7 +55,7 @@ export const accessList = obj => {
       thisMonth: obj['deposit_pos'] ? obj['deposit_pos'].monthEarnings : '0.00',
       statisticsType: 8,
       api: '/profit/reward',
-      img: img2
+      img: img4
     },
     {
       item: '设备活动分润',

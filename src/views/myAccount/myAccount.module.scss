@@ -92,16 +92,19 @@
   .tabs {
     @extend %center;
     background-color: var(--standardColor);
-    height: 6vh;
+    height: 5vh;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 5vh;
+    background: #0469ab;
+    padding: 5px 0;
     p {
       flex: 1;
       text-align: center;
-      height: 70%;
-      line-height: 4.2vh;
+      height: 100%;
+      // line-height: 4.2vh;
       border-right: 1px solid #ddd;
       @include last(1) {
         border-right: none;
