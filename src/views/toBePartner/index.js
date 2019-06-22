@@ -12,15 +12,20 @@ import _4 from '../../assets/img/tobepartner/_4.png'
 import _5 from '../../assets/img/tobepartner/_5.png'
 import _6 from '../../assets/img/tobepartner/_6.png'
 import bg from '../../assets/img/hehuoren_bg.png'
+import device from '../../assets/img/tobepartner/_5.png'
 
 export default function Cunter() {
   const [packageInfo, setPackageInfo] = useState({})
-  const jump = () => {
-    console.log('jump')
+  const [meallist, setmeallist] = useState([])
+  const [showDevice, setShowDevice] = useState(false)
+  //选择套餐 并跳转原生
+  const jump = (v) => {
+    console.log(v)
     const body = {
       path: 'ToBePartner',
-      goodsName: packageInfo.packageId // 例如： 8
+      goodsName: v.packageId // 例如： 8
     }
+    setShowDevice(!showDevice)
     window.getLoadData.jumpWithPara(JSON.stringify(body))
   }
   const handleGoBack = () => {
@@ -34,12 +39,18 @@ export default function Cunter() {
       })
       if (res.retCode === '0000') {
         console.log('res: ', res)
-        setPackageInfo(res.data)
+        // setPackageInfo(res.data)
+        setmeallist(res.data)
       }
     } catch (error) {
       console.log(error)
       Toast.info('出错了', 2000)
     }
+  }
+  //显示套餐
+  const selectFn = () => {
+    setShowDevice(!showDevice)
+    console.log(showDevice);
   }
   useEffect(() => {
     fetch()
@@ -96,10 +107,33 @@ export default function Cunter() {
             </div>
           ))}
         </div>
+        <div className={showDevice==true?'overlay acttive':'overlay'}>
+          <div className={showDevice==true?'list_items show':'list_items'}>
+            <p className="tit">选择套餐 <span className="delet"  onClick={selectFn}>x</span></p>
+            <ul>
+              {
+                meallist.map((item,index)=>(
+                  <li className="item" key={index} onClick={()=>jump(item)}>
+                    <img src={item.smallPic} alt="" />
+                    <span className="title">
+                        {item.packageName}
+                    </span>
+                    <span className={style.price}>
+                        {item.packagePrice}元/{item.deviceNum}台
+                    </span>
+              </li>
+                ))
+              }
+            </ul>
+        </div>
+        </div>
       </div>
-      <section className={style.btn} onClick={jump}>
-        开通 {packageInfo.packagePrice}元
+      <section className={style.btn} onClick={selectFn}>
+        开通合伙人
       </section>
+      {/* <section className={style.btn} onClick={jump}>
+        开通 {packageInfo.packagePrice}元
+      </section> */}
     </div>
   )
 }

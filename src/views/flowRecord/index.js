@@ -355,7 +355,7 @@ export default class index extends Component {
                           data={v}
                           key={v.devNo}
                           text={'激活时间'}
-                          handleDepositDetails={() => this.handleDepositDetails(v)}
+                          // handleDepositDetails={() => this.handleDepositDetails(v)}
                         />
                       ))}
                     </ul>

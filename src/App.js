@@ -21,6 +21,7 @@ import vipPersonalAchievementList from './views/vipAchievement/vipPersonalAchiev
 import vipTeamAchievementList from './views/vipAchievement/vipTeamAchievementList'
 import vipDetail from './views/vipAchievement/vipDetail'
 import userDetail from './views/vipAchievement/userDetail'
+import '../src/public/public.scss'
 //合伙人业绩
 import PartnerPerformance from './views/partnerAchievement/partnerPerformance'
 import VConsole from 'vconsole'
