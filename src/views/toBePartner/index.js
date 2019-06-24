@@ -12,8 +12,7 @@ import _4 from '../../assets/img/tobepartner/_4.png'
 import _5 from '../../assets/img/tobepartner/_5.png'
 import _6 from '../../assets/img/tobepartner/_6.png'
 import bg from '../../assets/img/hehuoren_bg.png'
-import device from '../../assets/img/tobepartner/_5.png'
-
+import device from '../../assets/img/tobepartner/device_4.png'
 export default function Cunter() {
   const [packageInfo, setPackageInfo] = useState({})
   const [meallist, setmeallist] = useState([])
