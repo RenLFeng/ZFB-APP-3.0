@@ -1,8 +1,8 @@
 import querystring from 'querystring'
 
 const APP_USER_AGENT = 'youxiangju'
-// const baseURL='http://test-app.sanzhongzhixiang.com';
-const  baseURL='http://192.168.0.24:80';
+const baseURL='http://test-app.sanzhongzhixiang.com';
+// const  baseURL='http://192.168.0.24:80';
 export const get = ({ url, data }) =>
   new Promise((resolve, reject) => {
     const prefix = process.env.REACT_APP_HOST || baseURL
