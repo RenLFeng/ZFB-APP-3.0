@@ -139,6 +139,7 @@ export default function Cunter() {
             </div>
           ))}
         </div>
+        <div style={{ width: '100vh', height: '5px', backgroundColor: 'rgb(247, 247, 247)' }} />
         <div className={showDevice==true?'overlay acttive':'overlay'}>
           <div className={showDevice==true?'list_items show':'list_items'}>
             <p className="tit">选择套餐 <span className="delet"  onClick={selectFn}>x</span></p>
