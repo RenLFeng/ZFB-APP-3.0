@@ -51,8 +51,14 @@ export default function Cunter() {
     setShowDevice(!showDevice)
     console.log(showDevice);
   }
+   const numFilter =(value)=> {
+    let tempVal = parseFloat(value).toFixed(3)
+    let realVal = tempVal.substring(0, tempVal.length - 1)
+    return realVal
+  }
+
   useEffect(() => {
-    fetch()
+    fetch();
   }, [])
   return (
     <div className={style.layout}>
@@ -118,7 +124,7 @@ export default function Cunter() {
                         {item.packageName}
                     </span>
                     <span className={style.price}>
-                        {item.packagePrice}元/{item.deviceNum}台
+                        {numFilter(item.packagePrice)}元 <i className="nub">/{item.deviceNum}台</i> 
                     </span>
               </li>
                 ))
