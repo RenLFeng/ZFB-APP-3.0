@@ -19,13 +19,16 @@
     transition: bottom .3s;
     .tit{
         text-align: center;
-        padding: 18px 0;
+        padding: 10px 20px 20px;
         position: relative;
         .delet{
             position: absolute;
+            width: 30px;
+            height: 30px;
             color: #999;
             right: 19px;
-            top: 0;
+            top: 50%;
+            margin-top: -20px;
             font-size: 20px;
         }
     }

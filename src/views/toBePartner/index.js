@@ -57,6 +57,33 @@ export default function Cunter() {
     return realVal
   }
 
+  const  filter = (num)=>{
+    if(num)
+    {
+      
+        num = num.toString().replace(/\$|\,/g,'');
+      
+        if(''==num || isNaN(num)){return 'Not a Number ! ';}
+      
+        var sign = num.indexOf("-")> 0 ? '-' : '';
+      
+        var cents = num.indexOf(".")> 0 ? num.substr(num.indexOf(".")) : '';
+        cents = cents.length>1 ? cents : '' ;
+  
+        num = num.indexOf(".")>0 ? num.substring(0,(num.indexOf("."))) : num ;
+      
+        if('' == cents){ if(num.length>1 && '0' == num.substr(0,1)){return 'Not a Number ! ';}}
+       
+        else{if(num.length>1 && '0' == num.substr(0,1)){return 'Not a Number ! ';}}
+  
+        for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)
+        {
+            num = num.substring(0,num.length-(4*i+3))+','+num.substring(num.length-(4*i+3));
+        }
+  
+        return (sign + num + cents);    
+    }
+  }
   useEffect(() => {
     fetch();
   }, [])
@@ -124,7 +151,7 @@ export default function Cunter() {
                         {item.packageName}
                     </span>
                     <span className={style.price}>
-                        {numFilter(item.packagePrice)}元 <i className="nub">/{item.deviceNum}台</i> 
+                        {filter(numFilter(item.packagePrice))}元 <i className="nub">/{item.deviceNum}台</i> 
                     </span>
               </li>
                 ))
