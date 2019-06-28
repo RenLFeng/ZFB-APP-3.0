@@ -1,0 +1,100 @@
+.orderlist{
+    margin-top: 40px;
+    .container{
+        background: #F1F1F1;
+        .titleLabel{
+            background: #fff;
+            padding-bottom:6px;
+            span{
+                display: inline-block;
+                width: 50%;
+                text-align: center;
+                padding: 10px 0;
+                &.act{
+                    color: #0075C1;
+                }
+            }
+        }
+        .list_items{
+            width: 100%;
+            margin-top: 10px;
+            .itembox{
+                margin-bottom: 10px;
+                background: #fff;
+                padding: 10px;
+                border-radius: 8px;
+                .top,.bottom{
+                    span{
+                        display: inline-block;
+                        width: 50%;
+                        &.right{
+                            text-align: right;
+                            .price{
+                                color: #f00;
+                            }
+                        }
+                    }
+                }
+                .top{
+                    color: #666666;
+                    .right{
+                        color: #999999;
+                    }
+                }
+            }
+            .tit{
+                text-align: center;
+                padding: 10px 20px 20px;
+                position: relative;
+                .delet{
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    color: #999;
+                    right: 19px;
+                    top: 50%;
+                    margin-top: -20px;
+                    font-size: 20px;
+                }
+            }
+            ul{
+                padding: 10px;
+                padding-top: 0;
+                .item{
+                    position: relative;
+                    padding: 20px 90px 20px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    // background: #fff;
+                }
+                img{
+                    position: absolute;
+                    left: 40px;
+                    width: 16vw;
+                    height: 16vw;
+                    border-radius: 3px;
+                    bottom: 6px;
+                    top:50%; 
+                    transform: translate(-50%,-50%);
+                }
+                span{
+                    display: block;
+                    height: auto;
+                    font-size: 14px;
+                    .price{
+                        color: #666;
+                    }
+                    .nub{
+                        color: #666;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .dialog{
+        ul{
+            text-align: left;
+        }
+    }
+}

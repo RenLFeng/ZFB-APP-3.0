@@ -42,6 +42,11 @@ const RouterMap = [
     component: asyncComponent(() => import('./views/login/index'))
   },
   {
+    path: '/d',
+    name: 'demo',
+    component: asyncComponent(() => import('./views/demo/index'))
+  },
+  {
     path: '/MyReward',
     name: 'MyReward',
     component: asyncComponent(() => import('./views/promotionReward/MyReward')),
@@ -155,6 +160,11 @@ const RouterMap = [
     path: '/shareRegister',
     name: '新用户扫码注册',
     component: asyncComponent(() => import('./views/shareRegister'))
+  },
+  {
+    path: '/orderList',
+    name: '订单列表',
+    component: asyncComponent(() => import('./views/OrderList'))
   }
 ]
 

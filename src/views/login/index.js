@@ -7,6 +7,15 @@ export default function Login(props) {
   const [psd, setpsd] = useState('qqq111')
   // const [id, setId] = useState('13798367807') 
   // const [psd, setpsd] = useState('a123456')
+
+
+
+    // const [dialogIsShow, setdialogIsShow] = useState(false)
+    // const toggDialog = () => {
+    //   setdialogIsShow(!dialogIsShow)
+    // }
+
+
   const handleInputId = event => {
     setId(event.target.value)
   }

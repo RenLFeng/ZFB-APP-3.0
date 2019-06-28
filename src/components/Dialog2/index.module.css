@@ -1,0 +1,57 @@
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  outline: none;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.dialogContent {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.dialogText {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  word-break: break-all;
+}
+.dialogBtn {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid#DFDFDF;
+  height: 50px;
+  line-height: 50px;
+  color: #4288ff;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns > div {
+  flex: 1;
+}
+
+.btns > div:nth-child(1) {
+  color: #6d6d6d;
+  border-right: 1px solid #dfdfdf;
+}
