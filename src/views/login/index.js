@@ -6,7 +6,7 @@ export default function Login(props) {
   const [id, setId] = useState('15770584383') // 汉寿
   const [psd, setpsd] = useState('qqq111')
   // const [id, setId] = useState('13798367807') 
-  // const [psd, setpsd] = useState('a123456')
+  // const [psd, setpsd] = useState('syh617173')
 
 
 

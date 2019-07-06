@@ -11,7 +11,7 @@ export default class index extends Component {
     username: '',
     phone: '',
     qrcode: '',
-    imgBase64: ''
+    imgBase64: '',
   }
   getUserinfo = async () => {
     // const prefix = window.location.href.split('share')[0]
@@ -38,7 +38,7 @@ export default class index extends Component {
       this.setState({
         username: res.data.username,
         phone: res.data.inviteOrganAccount,
-        qrcode: await build(txt)
+        qrcode: await build(txt),
       })
       html2canvas(document.querySelector('#canvas'), { scale: 2 }).then(canvas => {
         this.setState({

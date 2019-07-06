@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 export default class Loader extends Component {
   render() {
     // const html='<div className="content">content</div>'
-    const { isShow, handleClose,text,showHtml} = this.props
+    const { isShow, handleClose,text} = this.props
     return (
       <>
         <Modal isOpen={isShow} className={style.Modal} overlayClassName={style.Overlay}>

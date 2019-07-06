@@ -3,6 +3,7 @@ import style from './own/css.module.scss'
 import { Franchise, Gifts } from './own/constant'
 import { FetchPartnerInfo } from '../../public/api'
 import { post } from '../../public/call'
+import Empty from '../../components/Empty/index'
 import Toast from '../../components/_toast/index'
 import Header from '../../components/Header/index'
 import _1 from '../../assets/img/tobepartner/_1.png'
@@ -115,7 +116,7 @@ export default function Cunter() {
             ))}
           </section>
         </div>
-        <div style={{ width: '100vh', height: '5px', backgroundColor: 'rgb(247, 247, 247)' }} />
+        <div style={{ width: '100%', height: '5px', backgroundColor: 'rgb(247, 247, 247)' }} />
         <div className={style.Gift}>
           <h4 className={style.title}>
             合伙人权益<span>赠送</span>
@@ -139,7 +140,7 @@ export default function Cunter() {
             </div>
           ))}
         </div>
-        <div style={{ width: '100vh', height: '5px', backgroundColor: 'rgb(247, 247, 247)' }} />
+        <div style={{ width: '100%', height: '5px', backgroundColor: 'rgb(247, 247, 247)' }} />
         <div className={showDevice==true?'overlay acttive':'overlay'}>
           <div className={showDevice==true?'list_items show':'list_items'}>
             <p className="tit">选择套餐 <span className="delet"  onClick={selectFn}>x</span></p>

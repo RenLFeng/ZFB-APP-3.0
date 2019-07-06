@@ -11,8 +11,11 @@ import Slider from 'rc-slider'
 import Toast from '../../components/_toast/index.js'
 import { getLongestPeriod } from '../../core/plan/longestPeriod'
 import 'rc-slider/assets/index.css'
-
+import {cutTime,cutAmount} from '../../store/filter'
+const TYPE_AUDIO = Symbol()
+console.log('TYPE_AUDIO',TYPE_AUDIO);
 export default function Plan(props) {
+  console.log(props);
   const pathName = props.location.pathname.slice(1)
   const propsBody = { ...parseURL(decodeURI(props.location.search)), ...props.location.state }
   const {
@@ -212,6 +215,14 @@ export default function Plan(props) {
               </>
             )}
           </section>
+          <section className={css.form+' '+css.cue}>
+            <ul>
+            <li className={css.cueTitle}><h1>温馨提示：</h1></li>
+            <li className={css.item}>下午16：00前制定计划,当日执行</li>
+            <li className={css.item}>下午16：00后制定计划,次日天执行</li>
+          </ul>
+          </section>
+          
           <section className={css.formBtn}>
             {canSelectedList.length > 0 ? (
               <p onClick={handleUserCreatePlan} className={!billAmount ? css.disable : ''}>

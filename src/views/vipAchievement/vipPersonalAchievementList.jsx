@@ -16,7 +16,11 @@ class vipPersonalAchievementList extends Component {
     this.state = {
       userNameList:[],
       organName:'',
-      repaymentListData:[]
+      repaymentListData:[],
+      style:{
+        width:'95%',
+        padding:'0 0.10rem'
+      }
     }
   }
   async getRepaymentList () {
@@ -114,11 +118,13 @@ class vipPersonalAchievementList extends Component {
         </div>
         {
           this.state.repaymentListData.length === 0?
-            (<DefaultPage text={'暂无个人业绩'} />):
+            (
+            <DefaultPage text={'暂无个人业绩'} />
+            ):
             (
               <div>
                 <p className='merchantSubtitle'>{this.getTitle()}</p>
-                <ul className="repaymentlist" ref={this.ulList}>
+                <ul className="repaymentlist" ref={this.ulList} style={this.state.style}>
                   {
                     this.state.repaymentListData.map((ele, index) => {
                       return (
@@ -133,7 +139,7 @@ class vipPersonalAchievementList extends Component {
                             </div>
                             <div className="merchatnTransaction">{cutAmount(ele.statisticalAmount)}</div>
                           </li>  
-                        </Link> 
+                        </Link>   
                       )
                     })
                   }

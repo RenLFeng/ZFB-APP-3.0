@@ -98,7 +98,7 @@ export default class myAccount extends Component {
   // 体现明细
   getWithdrawData = async () => {
     try {
-      const res = await post({
+         const res = await post({
         url: 'wallet/withdraw/query',
         data: {
           pageNumber: 1,
