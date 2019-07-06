@@ -6,7 +6,11 @@ import { post } from '../../store/requestFacade'
 import { Link } from 'react-router-dom'
 import { toastIt } from '../../components/popup'
 import { cutAmount } from '../../store/filter'
-import DefaultPage from '../defaultPage'
+import DefaultPage from '../defaultPage';
+const   style={
+  width:'95%',
+  padding:'0 0.10rem'
+}
 class vipTeamAchievementList extends Component {
   constructor () {
     super()
@@ -125,7 +129,7 @@ class vipTeamAchievementList extends Component {
             (
               <div>
                 <p className='merchantSubtitle'>{this.getTitle()}</p>
-                <ul className="repaymentlist" ref={this.ulList}>
+                <ul className="repaymentlist" ref={this.ulList} style={style}>
                   {
                     this.state.repaymentListData.map((ele, index) => {
                       return (
