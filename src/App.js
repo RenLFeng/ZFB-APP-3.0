@@ -2,24 +2,40 @@ import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import '@babel/polyfill'
 import asyncComponent from './components/AsyncComponent'
+//特别提示：
 import MeasurementCard from './views/MeasurementCard'
 import ShareRegister from './views/shareRegister'
+//收益明细
 import ReturnsDetailed from './views/returnsDetailed/index'
+//设备还款
 import deviceRepay from './views/partnerAchievement/deviceRepay'
+//设备收款
 import deviceReceipt from './views/partnerAchievement/deviceReceipt'
 import historyAchievement from './views/partnerAchievement/historyAchievement'
 import historyAchievementDetail from './views/partnerAchievement/historyAchievementDetail'
+//历史业绩
 import noAchievement from './views/partnerAchievement/noAchievement.jsx'
+//合伙人详情
 import partnerDetail from './views/partnerAchievement/partnerDetail'
+ //商户详情
 import merchantDetail from './views/partnerAchievement/merchantDetail'
+//个人业绩
 import personalAchievementList from './views/partnerAchievement/personalAchievementList'
+//团队业绩
 import teamAchievementList from './views/partnerAchievement/teamAchievementList'
+//VIP 业绩
 import vipAchievement from './views/vipAchievement/index'
+//快捷还款
 import quickRepay from './views/vipAchievement/quickRepay'
+//快捷收款
 import quickReceipt from './views/vipAchievement/quickReceipt'
+//VIP 个人业绩
 import vipPersonalAchievementList from './views/vipAchievement/vipPersonalAchievementList'
+//VIP 团队业绩
 import vipTeamAchievementList from './views/vipAchievement/vipTeamAchievementList'
+//VIP详情
 import vipDetail from './views/vipAchievement/vipDetail'
+//用户详情
 import userDetail from './views/vipAchievement/userDetail'
 import '../src/public/public.scss'
 //合伙人业绩
@@ -195,7 +211,7 @@ class App extends Component {
           <Route path="/historyAchievementDetail" component={historyAchievementDetail} />
           <Route path="/noAchievement" component={noAchievement} />
           <Route path="/partnerDetail" component={partnerDetail} />
-          <Route path="/merchantDetail" component={merchantDetail} />
+          <Route path="/merchantDetail" component={merchantDetail} /> 
           <Route path="/deviceReceipt" component={deviceReceipt} />
           <Route path="/personalAchievementList" component={personalAchievementList} />
           <Route path="/teamAchievementList" component={teamAchievementList} />

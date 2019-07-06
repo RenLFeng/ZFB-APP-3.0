@@ -11,7 +11,6 @@ import Arrow from '../../components/UI/arrow/index'
 import Loader from '../../components/Loader/index'
 import dayjs from 'dayjs'
 import { CashWithdrawalMAP } from './map'
-
 export default class myAccount extends Component {
   constructor(props) {
     super(props)
