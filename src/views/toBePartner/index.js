@@ -165,9 +165,6 @@ export default function Cunter() {
       <section className={style.btn} onClick={selectFn}>
         开通合伙人
       </section>
-      {/* <section className={style.btn} onClick={jump}>
-        开通 {packageInfo.packagePrice}元
-      </section> */}
     </div>
   )
 }

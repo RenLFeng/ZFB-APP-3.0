@@ -5,7 +5,9 @@
   justify-content: center;
   align-items: center;
 }
-
+body{
+  background: #f7f7f7;
+}
 .layout {
   position: relative;
   max-height: 92vh;
@@ -13,7 +15,7 @@
   overflow-y: scroll;
   display: grid;
   grid-template-columns: 100vw;
-  // grid-template-rows: 6vh 86vh 10vh;    *****
+  // grid-template-rows: 6vh auto 10vh;   
   section {
     padding: 0;
     margin: 0;
@@ -137,7 +139,7 @@
   font-weight: bold;
 }
 .btn {
-  // position: absolute;  ****
+  // position: absolute;  //****
   position: fixed;
   left: 0;
   bottom: 0;
@@ -152,4 +154,5 @@
   touch-action: none;
   font-weight: bold;
   background: var(--standardColor);
+  // background: #0075C1;
 }
