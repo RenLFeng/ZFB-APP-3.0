@@ -45,9 +45,8 @@ class Partnership extends Component {
         </p>
         <p className="font"> 3)采取不正当竞争手段盗取、转移合作机构用户或受理终端； </p>
         <p className="font"> 4)留存、窃取或泄露客户账号、身份证号码等敏感信息及交易信息； </p>
-        <p className="font">
-          5)将协议项下业务进行转包、转让； 6)将用户结算资金通过其他机构进行二次清算；
-        </p>
+        <p className="font">5)将协议项下业务进行转包、转让；</p>
+        <p className="font">6)将用户结算资金通过其他机构进行二次清算；</p>
         <p className="font">7)因自身行为严重影响甲方声誉或给甲方造成重大经济损失；</p>
         <p className="font">8)严重违反法律、法规或行业自律规定；</p>
         <p className="font"> 9)甲方认为需要提前终止协议的其他行为。 </p>
@@ -203,7 +202,7 @@ class Partnership extends Component {
         </p>
         <p className="font">3.强制解除：</p>
         <p className="font">
-          1)由于乙方违反国家法律、法规或提供虚假申请材料，或因自身原因给甲方造成重大经济损失或严重不良影响的，甲方将强制解除合作协议；
+          1)由于乙方违反国家法律、法规或提供虚假申请材料，或因自身原因给甲方造成重大经济损失或严重不良影响的,甲方将强制解除合作协议；
         </p>
         <p className="font">
           2)乙方由于破产、倒闭、停业；被政府机构、司法机构列入破产清算的，甲方将强制解 除合作协议；
