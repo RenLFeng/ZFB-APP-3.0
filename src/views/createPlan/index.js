@@ -99,7 +99,7 @@ export default function Plan(props) {
       cardNo: cardNo,
       planLength: returnDay,
       ratio: availableList.filter(v => v.id === currentId)[0].rate,
-      channelKey: 'helibao_pos_channel'
+      channelKey: channelKey
     }
     try {
       const res = await postWithJson({
