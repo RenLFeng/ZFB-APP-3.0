@@ -10,6 +10,7 @@ import ShowDeviceID from './sub/deviceID.js'
 import Header from '../../components/Header/index'
 import { post } from '../../store/requestFacade'
 import Dialog from '../../components/Dialog/confirm'
+import { parseURL } from '../../store/URL'
 // import Toast from '../../components/_toast/index'
 
 const init = {
@@ -52,6 +53,14 @@ export default class index extends Component {
       this.setState({
         currentNavIndex: this.props.location.query.type
       })
+    }
+    if(this.props.location.search){
+      let urlData=this.props.location.search;
+      if(parseURL(urlData).type){
+        this.setState({
+            currentNavIndex: Number(parseURL(urlData).type) 
+          })
+      }    
     }
     this.accessData(time)
   }
