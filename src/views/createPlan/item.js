@@ -12,6 +12,17 @@ export default function Plan(props) {
   const pathName = props.location.pathname.slice(1)
   console.log('pathName: ', pathName)
   const { planId, bankName, goback } = props.location.query
+
+// const planId=4;
+// const bankName='平fds安';
+// const goback= () => {
+//   props.history.push({
+//     pathname: 'createplan',
+//   })
+// }
+
+
+
   const [count, setCount] = useState(1)
   const [dialogVisiblity, setdialogVisiblity] = useState(false)
   const [ComfirmDialogVisiblity, setComfirmDialogVisiblity] = useState(false)

@@ -422,24 +422,40 @@ $bule: #4289ff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
+    ////
+    display: block;
+    padding-left: 23px;
   }
 
   .catalog {
     display: flex;
-    border-right: 1px solid #eee;
+    // border-right: 1px solid #eee;
     @include even() {
       border-right: none;
     }
     @supports not (display: grid) {
       width: 50%;
     }
-
+    ///
+    height: 60px;
+    display: inline-block;
+    width: 49%;
+    
+    >div{
+      display: inline-block !important;
+      height: 100%;
+    }
     .imgarea {
-      width: 35%;
+      width: 34%;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+      //
+      line-height: 85px;
+      text-align: center;
+
       img {
         width: 60%;
       }
@@ -450,6 +466,9 @@ $bule: #4289ff;
       justify-content: center;
       align-content: center;
       flex-direction: column;
+      //
+      width: 63%;
+      padding-left: 3%;
       p {
         color: #666666;
         font-size: 0.14rem;
