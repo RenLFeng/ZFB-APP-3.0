@@ -4,16 +4,19 @@ import { parseURL } from '../../store/URL'
 export default function Plan(props) {
   const pathName = props.location.pathname.slice(1)
   console.log('pathName: ', pathName)
-  const { id } = { ...parseURL(decodeURI(props.location.search)) }
+  const { planId,token} = { ...parseURL(decodeURI(props.location.search)) }
   const handleGoback = () => {
     window.getLoadData.finishTist()
   }
 
   const Jump = () => {
+    if(token){
+    localStorage.setItem('token',token)
+    }
     props.history.push({
       pathname: 'planItem',
       query: {
-        planId: id,
+        planId: planId,
         goback: handleGoback,
         bankName: ''
       }

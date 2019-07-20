@@ -5,8 +5,8 @@ import { post } from '../../store/requestFacade'
 export default function Login(props) {
   const [id, setId] = useState('15770584383') // 汉寿
   const [psd, setpsd] = useState('qqq111')
-  // const [id, setId] = useState('13798367807') 
-  // const [psd, setpsd] = useState('syh617173')
+  // const [id, setId] = useState('13421840564') 
+  // const [psd, setpsd] = useState('qqq111')
 
 
 

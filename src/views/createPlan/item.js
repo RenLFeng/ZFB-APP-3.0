@@ -10,10 +10,10 @@ import Toast from '../../components/_toast/index'
 
 export default function Plan(props) {
   const pathName = props.location.pathname.slice(1)
-  console.log('pathName: ', pathName)
   const { planId, bankName, goback } = props.location.query
+  // console.log( ' props.location.query',props.location.query);
 
-// const planId=4;
+// const planId='P190720104524992000034';
 // const bankName='平fds安';
 // const goback= () => {
 //   props.history.push({
@@ -70,7 +70,7 @@ export default function Plan(props) {
           planId
         }
       })
-      console.log(res)
+      console.log('成功',res)
       if (res.retCode === '0000') {
         setPlanInfoData({
           workingAmount: res.data.workingAmount, // 周转金
@@ -97,7 +97,7 @@ export default function Plan(props) {
         })
       }
     } catch (error) {
-      console.log(error)
+      console.log('失败',error)
     }
   }
 

@@ -106,13 +106,15 @@ export const postWithJson = ({ url, data }) =>
   new Promise((resolve, reject) => {
     data = data || {}
     let prefix = process.env.REACT_APP_HOST || baseURL
-    url = [prefix, url].join('')
+    url = [prefix, url].join('/')
     let client = new XMLHttpRequest()
     client.open('POST', url, true)
     client.setRequestHeader('Content-Type', 'application/json;charset=UTF-8')
     // client.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
     const token = localStorage.getItem('token')
     if (token && navigator.userAgent === APP_USER_AGENT) {
+      client.setRequestHeader('token', token)
+    }else{
       client.setRequestHeader('token', token)
     }
     if (process.env.NODE_ENV !== 'production') {
