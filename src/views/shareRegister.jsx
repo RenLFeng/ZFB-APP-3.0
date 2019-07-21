@@ -98,6 +98,7 @@ class ShareRegister extends Component {
           }
         })
         if (res.retCode === '0000') {
+          
           toastIt(res.retMsg)
           setTimeout(() => {
             window.location.href = this.state.downloadLink
