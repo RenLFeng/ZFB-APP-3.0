@@ -103,6 +103,12 @@ const RouterMap = [
     component: asyncComponent(() => import('./views/QRcode/index'))
   },
   {
+    path: '/sign',
+    name: '电子签名',
+    // component: asyncComponent(() => import('./views/promotionReward/rewardDescription')),
+    component: asyncComponent(() => import('./views/QRcode/sign.js'))
+  },
+  {
     path: '/promotion',
     name: '我的推荐奖励',
     component: asyncComponent(() => import('./views/PromotionAward/index'))

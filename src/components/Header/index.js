@@ -11,7 +11,7 @@ export default function Header(props) {
     height: '6vh',
     backgroundColor: '#fff'
   }
-  const { title, handleGoBack, whiteArrow, color, backgroundColor } = props
+  const { title, handleGoBack, whiteArrow, color, backgroundColor,sav,savFn } = props
   const mergeStyle = { ...baseStyle, color, backgroundColor }
   return (
     <div className={style.Header} style={mergeStyle}>
@@ -21,6 +21,7 @@ export default function Header(props) {
           <img src={whiteArrow ? WhiteArrow : BlackArrow} alt="" />
         </div>
         <div>{props.children}</div>
+        {sav?<span className={style.sav} onClick={savFn}>保存</span>:''}
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 .share {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #fff;
+  height: auto;
+  min-height: 100vh;
+  background-color: #F4F7FF;
 }
 
 %center {
@@ -100,6 +100,55 @@
     }
   }
 }
+.sing{
+  margin-top: 40px;
+  padding: 0 10%;
+  width: 80%;
+  background: url(../../assets//img/qiangoudan_bg@2x.png) no-repeat;
+  background-size: 100% 100%;
+  .tit{
+    color: #66819F;
+    position: relative;
+    >p{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0,-50%);
+    }
+    >div{
+       float:right;
+    }
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  .lists{
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    li{
+      line-height: 30px;
+      .t1{
+        margin-right: 20px;
+        color: #A0B2CA;
+      }
+      .t2{}
+    }
+  }
+  .singtext{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    color: #A0B2CA;
+    .SignatureContent{
+    
+    }
+  }
+}
 
 .share {
   button {
@@ -115,4 +164,31 @@
     color: #fff;
     background: var(--standardColor);
   }
+}
+.sav{
+  position: absolute;
+  right: 10px;
+  top:0;
+  color: #fff;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#myCanvas{
+  width: 90%;
+  height: 150px;
+  border-radius: 10px;
+  margin: 10px 5% 5px 5%;
+  color:#ff6000;
+  background-color: #ffffff;
+}
+.btn-primary{
+  background-color:#5aa6e8;
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 6px;
+  margin-left: 5%;
+  font-size: 12px;
 }
