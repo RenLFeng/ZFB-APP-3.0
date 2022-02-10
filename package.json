@@ -54,7 +54,7 @@
     "debug": "^4.1.1",
     "family.scss": "^1.0.8",
     "jest": "^23.6.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "regenerator-runtime": "^0.13.1",
     "source-map-explorer": "^1.8.0",
     "vconsole": "^3.3.0"
